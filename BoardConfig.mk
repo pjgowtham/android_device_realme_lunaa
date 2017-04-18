@@ -29,4 +29,4 @@ TARGET_SCREEN_DENSITY := 450
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # inherit from the proprietary version
--include vendor/oneplus/lemonade/BoardConfigVendor.mk
+include vendor/oneplus/lemonade/BoardConfigVendor.mk
