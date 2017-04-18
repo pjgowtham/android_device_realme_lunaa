@@ -15,7 +15,7 @@
 #
 
 # Inherit from oneplus sm8350-common
--include device/oneplus/sm8350-common/BoardConfigCommon.mk
+include device/oneplus/sm8350-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/oneplus/lemonade
 
