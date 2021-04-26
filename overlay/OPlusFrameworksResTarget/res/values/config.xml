@@ -444,7 +444,7 @@
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
         M 0,0
         H 164
-        V 102.5
+        V 123
         H 0
         Z
         @left
