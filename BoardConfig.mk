@@ -42,8 +42,5 @@ endif
 BOARD_ONEPLUS_DYNAMIC_PARTITIONS_SIZE := 3753902080
 BOARD_SUPER_PARTITION_SIZE := 7516192768
 
-# Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
-
 # inherit from the proprietary version
 -include vendor/oneplus/lemonade/BoardConfigVendor.mk
