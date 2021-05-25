@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -52,8 +52,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
-# Inherit from oneplus sm8250-common
-$(call inherit-product, device/oneplus/sm8250-common/common.mk)
+# Inherit from oneplus sm8350-common
+$(call inherit-product, device/oneplus/sm8350-common/common.mk)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/oneplus/kebab/kebab-vendor.mk)
+$(call inherit-product, vendor/oneplus/lemonade/lemonade-vendor.mk)

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-# Inherit from oneplus sm8250-common
--include device/oneplus/sm8250-common/BoardConfigCommon.mk
+# Inherit from oneplus sm8350-common
+-include device/oneplus/sm8350-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oneplus/kebab
+DEVICE_PATH := device/oneplus/lemonade
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
@@ -26,9 +26,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_SCREEN_DENSITY := 450
 
 # Fingerprint
-SOONG_CONFIG_ONEPLUS_KONA_FOD_POS_X = 453
-SOONG_CONFIG_ONEPLUS_KONA_FOD_POS_Y = 1823
-SOONG_CONFIG_ONEPLUS_KONA_FOD_SIZE = 174
+SOONG_CONFIG_ONEPLUS_LAHAINA_FOD_POS_X = 453
+SOONG_CONFIG_ONEPLUS_LAHAINA_FOD_POS_Y = 1823
+SOONG_CONFIG_ONEPLUS_LAHAINA_FOD_SIZE = 174
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -49,4 +49,4 @@ BOARD_SUPER_PARTITION_SIZE := 7516192768
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # inherit from the proprietary version
--include vendor/oneplus/kebab/BoardConfigVendor.mk
+-include vendor/oneplus/lemonade/BoardConfigVendor.mk
