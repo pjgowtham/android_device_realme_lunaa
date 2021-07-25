@@ -1,6 +1,2 @@
 # Audio
 ro.config.vc_call_vol_steps=9
-
-# Crypto
-ro.crypto.dm_default_key.options_format.version=2
-ro.crypto.volume.metadata.method=dm-default-key
