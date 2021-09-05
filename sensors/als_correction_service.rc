@@ -2,4 +2,5 @@ service als_correction_service /system_ext/bin/als_correction_service
     class hal
     user system
     group system
+    socket als_correction stream 600 system system
     writepid /dev/cpuset/system-background/tasks
