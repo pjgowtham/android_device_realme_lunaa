@@ -360,6 +360,9 @@ vendor/etc/libnfc-mtp-SN100.conf_20852
 vendor/etc/libnfc-mtp-SN100.conf_20853
 vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
 
+# ODM feature list
+odm/etc/odm_feature_list
+
 # Sensors
 vendor/etc/sensors/config/ak0991x_0.json
 vendor/etc/sensors/config/bmi26x_0.json

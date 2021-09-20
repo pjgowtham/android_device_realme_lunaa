@@ -42,10 +42,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths.xml
 
-# OPFeature
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list
-
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Inherit from oneplus sm8350-common
