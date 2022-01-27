@@ -307,7 +307,6 @@ vendor/firmware/evass.mdt
 vendor/lib64/hw/goodix.fod.lahaina.so
 vendor/lib64/fp_hal_extension.so
 vendor/lib64/libgf_ud_hal.so
-vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
 # Iris
 vendor/bin/hw/vendor.pixelworks.hardware.display.iris-service
