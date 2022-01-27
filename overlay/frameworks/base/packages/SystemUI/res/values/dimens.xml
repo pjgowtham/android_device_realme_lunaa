@@ -34,5 +34,5 @@
     <!-- Margin on the right side of the system icon group on Keyguard. -->
     <dimen name="system_icons_keyguard_padding_end">@dimen/status_bar_padding_end</dimen>
 
-    <dimen name="keyguard_indication_margin_bottom">65px</dimen>
+    <dimen name="keyguard_indication_margin_bottom">300px</dimen>
 </resources>
