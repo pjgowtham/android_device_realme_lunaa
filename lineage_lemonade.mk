@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,11 +30,14 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := LE2113
 
+PRODUCT_SYSTEM_NAME := OnePlus9_EEA
+PRODUCT_SYSTEM_DEVICE := OnePlus9
+
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=OnePlus9 \
-    PRODUCT_NAME=OnePlus9_EEA \
+    TARGET_DEVICE=OnePlus9 \
+    TARGET_PRODUCT=OnePlus9_EEA \
     PRIVATE_BUILD_DESC="OnePlus9-user 11   release-keys"
 
 BUILD_FINGERPRINT := OnePlus/OnePlus9_EEA/OnePlus9:11/RKQ1.201105.002/2111112053:user/release-keys
