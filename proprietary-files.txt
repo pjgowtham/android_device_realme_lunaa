@@ -583,30 +583,15 @@ odm/vendor/firmware/iris5_ccf1.fw
 odm/vendor/firmware/iris5_ccf2.fw
 odm/vendor/firmware/iris5.fw
 
-# NFC configs
-odm/etc/nfc/libnfc-mtp-SN100.conf_19815
-odm/etc/nfc/libnfc-mtp-SN100.conf_19816
-odm/etc/nfc/libnfc-mtp-SN100.conf_19825
-odm/etc/nfc/libnfc-mtp-SN100.conf_19826
-odm/etc/nfc/libnfc-mtp-SN100.conf_20031
-odm/etc/nfc/libnfc-mtp-SN100.conf_20311
-odm/etc/nfc/libnfc-mtp-SN100.conf_20627
-odm/etc/nfc/libnfc-mtp-SN100.conf_20659
-odm/etc/nfc/libnfc-mtp-SN100.conf_20664
-odm/etc/nfc/libnfc-mtp-SN100.conf_20666
-odm/etc/nfc/libnfc-mtp-SN100.conf_20755
-odm/etc/nfc/libnfc-mtp-SN100.conf_20851
-odm/etc/nfc/libnfc-mtp-SN100.conf_20852
-odm/etc/nfc/libnfc-mtp-SN100.conf_20853
-odm/etc/nfc/libnfc-mtp-SN100.conf_20854
-odm/etc/nfc/libnfc-mtp-SN100.conf_20857
-odm/etc/nfc/libnfc-mtp-SN100.conf_20858
-odm/etc/nfc/libnfc-mtp-SN100.conf_20859
-odm/etc/nfc/libnfc-mtp-SN100.conf_2085A
-odm/etc/nfc/libnfc-mtp-SN100.conf_21005
-odm/etc/nfc/libnfc-mtp-SN100.conf_21205
-odm/etc/nfc/libnfc-mtp-SN100.conf_21617
-odm/etc/nfc/libnfc-mtp-SN100.conf_216B2
+# NFC
+odm/etc/init/init.st54x.nfc.rc
+-odm/etc/vintf/manifest/manifest_st21h.xml
+odm/etc/nfc/libnfc-hal-st.conf_21675:vendor/etc/libnfc-hal-st.conf
+odm/etc/nfc/libnfc-nci.conf_21675:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/libnfc-st21h_conf.txt_21675:vendor/etc/libnfc-st21h_conf.txt
+odm/etc/nfc/libse-gto-hal.conf_21604:vendor/etc/libse-gto-hal.conf
+odm/etc/nfc/st21nfc_fw.bin_st21h:vendor/firmware/st21nfc_fw.bin
+odm/etc/nfc/st21nfc_fw7.bin_st21h:vendor/firmware/st21nfc_fw7.bin
 
 # Sensors
 vendor/etc/sensors/config/lahaina_default_sensors.json
