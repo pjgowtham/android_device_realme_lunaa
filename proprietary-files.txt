@@ -486,6 +486,9 @@ odm/lib64/camera/fdconfigvideo.bin
 odm/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/hw/camera.qcom.so
 
+# Charger firmware
+odm/firmware/fastchg/charging_thermal_config_default.txt
+
 # CVP firmware
 vendor/firmware/evass.b01
 vendor/firmware/evass.b02
@@ -718,6 +721,17 @@ vendor/etc/sensors/sns_reg_config
 
 # Thermal engine
 vendor/etc/thermal-engine.conf
+
+# Touchpanel firmware
+odm/firmware/tp/21603/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/21603/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/21603/LIMIT_FT3518_SAMSUNG.img
+
+# UFS firmware
+odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
+odm/firmware/ufs/SKhynix-H9HQ15AECMBDAR.bin
+odm/firmware/ufs/SKhynix-H9HQ15AFAMBDAR.bin
+odm/firmware/ufs/SKhynix-H9HQ21AFAMADAR.bin
 
 # VPU firmware
 vendor/firmware/vpu20_4v.b01
