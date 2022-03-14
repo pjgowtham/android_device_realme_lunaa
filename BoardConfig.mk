@@ -25,6 +25,18 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 # Display
 TARGET_SCREEN_DENSITY := 450
 
+# Kernel
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/RMX3360/Image.gz
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/RMX3360/dtbo.img
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/RMX3360/dtb.img
+BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+
+# Copy kernel modules to vendor_boot and vendor_dlkm
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/oplus/sm8350-common/RMX3360_vendor_dlkm,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules) \
+    $(call find-copy-subdir-files,*,vendor/oplus/sm8350-common/RMX3360_vendor_ramdisk,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
+    
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
