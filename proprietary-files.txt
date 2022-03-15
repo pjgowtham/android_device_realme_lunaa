@@ -1,7 +1,6 @@
 # All unpinned blobs below are extracted from OnePlus9Oxygen_22.E.44_OTA_1440_all_2201182113_52ddcf
 
 # ACDB
-odm/etc/acdbdata/Audio_Parameter_Version.txt
 odm/etc/acdbdata/Bluetooth_cal.acdb
 odm/etc/acdbdata/General_cal.acdb
 odm/etc/acdbdata/Global_cal.acdb
@@ -518,70 +517,6 @@ odm/lib/hw/fingerprint.goodix_G3.default.so
 odm/lib/hw/fingerprint.goodix_G5.default.so
 odm/lib/hw/fingerprint.goodix_G6.default.so
 odm/lib/hw/fingerprint.goodix_G7.default.so
-
-# Iris
-odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
-odm/etc/inparm/iris5/inParm1.txt
-odm/etc/inparm/iris5/inParm10.txt
-odm/etc/inparm/iris5/inParm11.txt
-odm/etc/inparm/iris5/inParm12.txt
-odm/etc/inparm/iris5/inParm13.txt
-odm/etc/inparm/iris5/inParm14.txt
-odm/etc/inparm/iris5/inParm15.txt
-odm/etc/inparm/iris5/inParm16.txt
-odm/etc/inparm/iris5/inParm17.txt
-odm/etc/inparm/iris5/inParm18.txt
-odm/etc/inparm/iris5/inParm2.txt
-odm/etc/inparm/iris5/inParm3.txt
-odm/etc/inparm/iris5/inParm4.txt
-odm/etc/inparm/iris5/inParm5.txt
-odm/etc/inparm/iris5/inParm6.txt
-odm/etc/inparm/iris5/inParm7.txt
-odm/etc/inparm/iris5/inParm8.txt
-odm/etc/inparm/iris5/inParm9.txt
-odm/etc/inparm/irissoft/inParm.lst
-odm/etc/inparm/irissoft/inParm10.txt
-odm/etc/inparm/irissoft/inParm11.txt
-odm/etc/inparm/irissoft/inParm12.txt
-odm/etc/inparm/irissoft/inParm14_a.txt
-odm/etc/inparm/irissoft/inParm14_b.txt
-odm/etc/inparm/irissoft/inParm14_c.txt
-odm/etc/inparm/irissoft/inParm16_center.txt
-odm/etc/inparm/irissoft/inParm16_down.txt
-odm/etc/inparm/irissoft/inParm16_up.txt
-odm/etc/inparm/irissoft/inParm17_center.txt
-odm/etc/inparm/irissoft/inParm17_down.txt
-odm/etc/inparm/irissoft/inParm17_up.txt
-odm/etc/inparm/irissoft/inParm18_center.txt
-odm/etc/inparm/irissoft/inParm18_down.txt
-odm/etc/inparm/irissoft/inParm18_up.txt
-odm/etc/inparm/irissoft/inParm1_center.txt
-odm/etc/inparm/irissoft/inParm1_down.txt
-odm/etc/inparm/irissoft/inParm1_up.txt
-odm/etc/inparm/irissoft/inParm2_center.txt
-odm/etc/inparm/irissoft/inParm2_down.txt
-odm/etc/inparm/irissoft/inParm2_up.txt
-odm/etc/inparm/irissoft/inParm3_center.txt
-odm/etc/inparm/irissoft/inParm3_down.txt
-odm/etc/inparm/irissoft/inParm3_up.txt
-odm/etc/inparm/irissoft/inParm4_center.txt
-odm/etc/inparm/irissoft/inParm4_down.txt
-odm/etc/inparm/irissoft/inParm4_up.txt
-odm/etc/inparm/irissoft/inParm5_center.txt
-odm/etc/inparm/irissoft/inParm5_down.txt
-odm/etc/inparm/irissoft/inParm5_up.txt
-odm/etc/inparm/irissoft/inParm6_center.txt
-odm/etc/inparm/irissoft/inParm6_down.txt
-odm/etc/inparm/irissoft/inParm6_up.txt
-odm/etc/inparm/irissoft/inParm8_a.txt
-odm/etc/inparm/irissoft/inParm8_b.txt
-odm/etc/inparm/irissoft/inParm8_c.txt
-odm/etc/inparm/irissoft/mcfCheck.txt
-odm/etc/irissoft.fw
-odm/etc/irissoft_fod.fw
-odm/vendor/firmware/iris5.fw
-odm/vendor/firmware/iris5_ccf1.fw
-odm/vendor/firmware/iris5_ccf2.fw
 
 # NFC
 odm/etc/init/init.st54x.nfc.rc
