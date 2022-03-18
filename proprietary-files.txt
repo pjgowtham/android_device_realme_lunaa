@@ -925,3 +925,123 @@ vendor/firmware/vpu20_4v.b19
 vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v.mdt
 vendor/firmware/vpu20_4v_unsigned.mbn
+
+# WiFi - init/bin
+odm/bin/init.oplus.wifi.sh
+odm/bin/vendor.autochmod.sh
+odm/etc/init/hw/init.oplus.wifi.rc
+vendor/etc/init/hw/init.wlan.target.rc
+
+# WiFi - init dependencies
+odm/bin/iwpriv:vendor/bin/iwpriv
+odm/bin/iwpriv
+odm/bin/wifi_diag
+odm/bin/wifisar
+vendor/bin/cnss_diag
+vendor/bin/hal_proxy_daemon
+vendor/bin/lowirpcd
+vendor/bin/sigma_dut
+
+# WiFi - Service
+odm/bin/hw/vendor.oplus.hardware.wifi@1.1-service
+odm/etc/init/vendor.oplus.hardware.wifi@1.1-service-qcom.rc
+odm/etc/permissions/vendor-oplus-hardware-wifi.xml
+-odm/etc/vintf/manifest/oplus_wifi_service_device.xml
+odm/etc/ueventd.reserve.rc
+odm/lib64/vendor.oplus.hardware.wifi.powersystem@1.0.so
+odm/lib64/vendor.oplus.hardware.wifi@1.1.so
+vendor/bin/hw/android.hardware.wifi@1.0-service
+vendor/etc/init/android.hardware.wifi@1.0-service.rc
+-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
+vendor/lib/libnlnetmgr.so
+vendor/lib64/libnlnetmgr.so
+vendor/lib64/libwifi-hal-ctrl.so
+vendor/lib64/libwifi-hal-qcom.so
+vendor/lib64/libwifi-hal.so
+
+# WiFi Hostapd
+vendor/bin/hw/hostapd
+vendor/bin/hostapd_cli
+vendor/etc/hostapd/hostapd.accept
+vendor/etc/hostapd/hostapd.deny
+vendor/etc/hostapd/hostapd_default.conf
+vendor/etc/init/hostapd.android.rc
+vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
+-vendor/etc/vintf/manifest/oplus_wifi_hostapd_device.xml
+vendor/lib64/vendor.oplus.hardware.wifi.hostapd@1.0.so
+vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so
+vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.1.so
+vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.2.so
+
+# Source built wifi blobs (preadded)
+vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
+
+# WiFi Supplicant
+vendor/bin/hw/wpa_supplicant
+vendor/bin/wpa_cli
+vendor/etc/init/android.hardware.wifi.supplicant-service.rc
+vendor/etc/vintf/manifest/oplus_wifi_supplicant_device.xml
+vendor/lib/libcld80211.so
+vendor/lib64/libcert_parse.wpa_s.so
+vendor/lib64/libcld80211.so
+vendor/lib64/libkeystore-engine-wifi-hidl.so
+vendor/lib64/libkeystore-wifi-hidl.so
+vendor/lib64/libwpa_client.so
+vendor/lib64/vendor.oplus.hardware.wifi.supplicant@2.0.so
+vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
+vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so
+vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.1.so
+vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.2.so
+
+# WiFi Wigig
+vendor/bin/wigig_wiburn
+vendor/bin/wigighalsvc
+vendor/bin/wigignpt
+vendor/etc/configstore/wigig.xml
+vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
+vendor/firmware/wigig/wigig.ini
+vendor/lib64/libwigig_flashaccess.so
+vendor/lib64/libwigig_ftm_flows.so
+vendor/lib64/libwigig_pciaccess.so
+vendor/lib64/libwigig_utils.so
+vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
+vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
+
+# Wifi - iwlan
+vendor/bin/netmgrd
+vendor/etc/data/netmgr_config.xml
+vendor/etc/init/netmgrd.rc
+vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so
+
+# Wifi Configs
+odm/etc/wifi/bdwlan.elf
+odm/etc/wifi/bin_version
+odm/etc/wifi/cnss_diag.conf
+odm/etc/wifi/regdb.bin
+odm/etc/wifi/regdb_version
+odm/etc/wifi/sar-vendor-cmd.xml
+odm/etc/wifi/wifisar.cfg
+odm/etc/wifi.cfg
+odm/etc/wifi.cfg
+vendor/etc/wifi/qca6390/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/wlan/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/aoa_cldb_falcon.bin
+vendor/etc/wifi/aoa_cldb_swl14.bin
+vendor/etc/wifi/fstman.ini
+vendor/etc/wifi/icm.conf
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/vendor_cmd.xml
+vendor/etc/wifi/wigig_p2p_supplicant.conf
+vendor/etc/wifi/wigig_supplicant.conf
+vendor/etc/wifi/wpa_supplicant.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
+
+# Wifey
+vendor/lib64/android.hardware.wifi.supplicant@1.2.so
+vendor/lib64/android.hardware.wifi.supplicant@1.3.so
+
+# Misc
+#vendor/lib64/vendor.qti.data.factory@2.3.so
+#vendor/lib64/vendor.qti.hardware.data.lce@1.0.so
+#vendor/lib64/vendor.qti.latency@2.1.so
