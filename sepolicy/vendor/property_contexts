@@ -1,0 +1,2 @@
+# Sensors
+persist.vendor.sensors.fix_applied    u:object_r:vendor_sensors_prop:s0
