@@ -19,6 +19,11 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Init
+PRODUCT_PACKAGES += \
+    init.lunaa.rc \
+    init.sensors_fix.sh
+
 # NFC
 TARGET_NFC_CHIPSET := st21
 
