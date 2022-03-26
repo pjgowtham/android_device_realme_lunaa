@@ -913,6 +913,27 @@ odm/lib/hw/fingerprint.goodix_G5.default.so
 odm/lib/hw/fingerprint.goodix_G6.default.so
 odm/lib/hw/fingerprint.goodix_G7.default.so
 
+# Fingerprint firmware
+odm/vendor/firmware/ancap64.b00
+odm/vendor/firmware/ancap64.b01
+odm/vendor/firmware/ancap64.b02
+odm/vendor/firmware/ancap64.b03
+odm/vendor/firmware/ancap64.b04
+odm/vendor/firmware/ancap64.b05
+odm/vendor/firmware/ancap64.b06
+odm/vendor/firmware/ancap64.b07
+odm/vendor/firmware/ancap64.mdt
+
+odm/vendor/firmware/ancap64.b00:vendor/firmware/ancap64.b00
+odm/vendor/firmware/ancap64.b01:vendor/firmware/ancap64.b01
+odm/vendor/firmware/ancap64.b02:vendor/firmware/ancap64.b02
+odm/vendor/firmware/ancap64.b03:vendor/firmware/ancap64.b03
+odm/vendor/firmware/ancap64.b04:vendor/firmware/ancap64.b04
+odm/vendor/firmware/ancap64.b05:vendor/firmware/ancap64.b05
+odm/vendor/firmware/ancap64.b06:vendor/firmware/ancap64.b06
+odm/vendor/firmware/ancap64.b07:vendor/firmware/ancap64.b07
+odm/vendor/firmware/ancap64.mdt:vendor/firmware/ancap64.mdt
+
 # Graphics (Adreno)
 -vendor/app/com.qualcomm.qti.gpudrivers.lahaina.api30/com.qualcomm.qti.gpudrivers.lahaina.api30.apk;PRESIGNED
 vendor/lib/egl/eglSubDriverAndroid.so
