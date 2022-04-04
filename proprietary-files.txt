@@ -1180,12 +1180,6 @@ odm/firmware/tp/21603/FW_FT3518_SAMSUNG.img
 odm/firmware/tp/21603/FW_FT3518_SAMSUNG_FAE.img
 odm/firmware/tp/21603/LIMIT_FT3518_SAMSUNG.img
 
-# UFS firmware
-odm/firmware/ufs/SKhynix-H9HQ15AECMBDAR.bin
-odm/firmware/ufs/SKhynix-H9HQ15AFAMBDAR.bin
-odm/firmware/ufs/SKhynix-H9HQ21AFAMADAR.bin
-odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
-
 # VPU firmware
 vendor/firmware/vpu20_1v.b01
 vendor/firmware/vpu20_1v.b02
