@@ -46,6 +46,71 @@
         <item>10</item>
     </integer-array>
 
+    <!-- See AmbientSensor.AmbientColorTemperatureSensor.
+         The ambient color temperature sensor name. -->
+    <string name="config_displayWhiteBalanceColorTemperatureSensorName" translatable="false">qti.sensor.rgb</string>
+
+    <!-- Boolean indicating whether display white balance is supported. -->
+    <bool name="config_displayWhiteBalanceAvailable">true</bool>
+
+    <!-- See DisplayWhiteBalanceController.
+         A float array containing a list of ambient color temperatures, in Kelvin. This array,
+         together with config_displayWhiteBalanceDisplayColorTemperatures, is used to generate a
+         lookup table used in DisplayWhiteBalanceController. This lookup table is used to map
+         ambient color temperature readings to a target color temperature for the display.
+         This table is optional. If used, this array must,
+         1) Contain at least two entries
+         2) Be the same length as config_displayWhiteBalanceDisplayColorTemperatures. -->
+    <integer-array name="config_displayWhiteBalanceAmbientColorTemperatures">
+        <item>2500</item>
+        <item>2750</item>
+        <item>3000</item>
+        <item>3250</item>
+        <item>3500</item>
+        <item>3750</item>
+        <item>4000</item>
+        <item>4250</item>
+        <item>4500</item>
+        <item>4750</item>
+        <item>5000</item>
+        <item>5250</item>
+        <item>5500</item>
+        <item>5750</item>
+        <item>6000</item>
+        <item>6250</item>
+        <item>6500</item>
+        <item>6750</item>
+        <item>7000</item>
+        <item>7250</item>
+        <item>7500</item>
+        <item>7750</item>
+        <item>8000</item>
+        <item>8250</item>
+        <item>8500</item>
+        <item>8750</item>
+        <item>9000</item>
+        <item>9250</item>
+        <item>9500</item>
+        <item>9750</item>
+        <item>10000</item>
+    </integer-array>
+
+    <!-- See DisplayWhiteBalanceThrottler.
+         The decrease threshold values, throttled if value > value * (1 - threshold). Must be
+         non-empty, the same length as config_displayWhiteBalanceBaseThresholds, and contain
+         non-negative numbers. -->
+    <array name="config_displayWhiteBalanceDecreaseThresholds">
+        <item>0.05</item>
+    </array>
+
+    <!-- See DisplayWhiteBalanceThrottler.
+         The increase threshold values, throttled if value < value * (1 + threshold). Must be
+         non-empty, the same length as config_displayWhiteBalanceBaseThresholds, and contain
+         non-negative numbers. -->
+    <array name="config_displayWhiteBalanceIncreaseThresholds">
+        <item>0.05</item>
+    </array>
+
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
          config_screenThresholdLevels. The brightening threshold is calculated as
