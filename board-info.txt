@@ -1,1 +1,1 @@
-require board=lahaina|OnePlus9
+require board=lahaina|RMX3360
