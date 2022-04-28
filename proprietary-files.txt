@@ -1,8 +1,7 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from Realme GT Master Edition (RMX3360_11.F.01).
 
-# ACDBs
-odm/etc/acdbdata/Audio_Parameter_Version.txt
+# ACDB
 odm/etc/acdbdata/Bluetooth_cal.acdb
 odm/etc/acdbdata/General_cal.acdb
 odm/etc/acdbdata/Global_cal.acdb
