@@ -158,6 +158,15 @@ odm/vendor/firmware/ancap64.b06
 odm/vendor/firmware/ancap64.b07
 odm/vendor/firmware/ancap64.mdt
 
+# Firmwre (IPA)
+vendor/firmware/yupik_ipa_fws.b00
+vendor/firmware/yupik_ipa_fws.b01
+vendor/firmware/yupik_ipa_fws.b02
+vendor/firmware/yupik_ipa_fws.b03
+vendor/firmware/yupik_ipa_fws.b04
+vendor/firmware/yupik_ipa_fws.elf
+vendor/firmware/yupik_ipa_fws.mdt
+
 # NFC
 odm/etc/init/init.st54x.nfc.rc
 odm/etc/nfc/libnfc-hal-st.conf_21675:vendor/etc/libnfc-hal-st.conf
