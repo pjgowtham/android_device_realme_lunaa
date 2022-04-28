@@ -166,6 +166,11 @@ vendor/firmware/yupik_ipa_fws.b04
 vendor/firmware/yupik_ipa_fws.elf
 vendor/firmware/yupik_ipa_fws.mdt
 
+# Firmware (Touchpanel)
+odm/firmware/tp/21603/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/21603/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/21603/LIMIT_FT3518_SAMSUNG.img
+
 # Firmware (VPU)
 vendor/firmware/vpu20_1v.b01
 vendor/firmware/vpu20_1v.b02
