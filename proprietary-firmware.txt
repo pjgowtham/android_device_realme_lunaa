@@ -1,10 +1,7 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 9 (LE2115_14.0.0.1901(EX01)).
+## are from realme GT Master Edition (RMX3360_13.1.0.161(EX01)).
 
-# Exceptions:
-# abl.img: from OnePlus 9 Pro (LE2115_13.1.0.593(EX01))
-
-abl.img;AB|4875db77f095947337b42d6e48f7a7510f56f4ed
+abl.img;AB
 aop.img;AB
 bluetooth.img;AB
 cpucp.img;AB
