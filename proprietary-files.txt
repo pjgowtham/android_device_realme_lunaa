@@ -147,6 +147,17 @@ odm/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin
 odm/lib64/camera/com.qti.tuned.semco_imx689.bin
 odm/lib64/camera/com.qti.tuned.shine_gc02m1b.bin
 
+# Firmware (Fingerprint)
+odm/vendor/firmware/ancap64.b00
+odm/vendor/firmware/ancap64.b01
+odm/vendor/firmware/ancap64.b02
+odm/vendor/firmware/ancap64.b03
+odm/vendor/firmware/ancap64.b04
+odm/vendor/firmware/ancap64.b05
+odm/vendor/firmware/ancap64.b06
+odm/vendor/firmware/ancap64.b07
+odm/vendor/firmware/ancap64.mdt
+
 # NFC
 odm/etc/init/init.st54x.nfc.rc
 odm/etc/nfc/libnfc-hal-st.conf_21675:vendor/etc/libnfc-hal-st.conf
