@@ -81,6 +81,24 @@
         <item>0</item>
     </array>
 
+    <!-- Array of output values for LCD backlight corresponding to the lux values
+         in the config_autoBrightnessLevels array.  This array should have size one greater
+         than the size of the config_autoBrightnessLevels array.
+         The brightness values must be between 0 and 255 and be non-decreasing.
+         This must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>15</item>
+        <item>65</item>
+        <item>106</item>
+        <item>191</item>
+        <item>317</item>
+        <item>510</item>
+        <item>813</item>
+        <item>1034</item>
+        <item>1508</item>
+        <item>2047</item>
+    </integer-array>
+
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
          (1-based arrays)
@@ -102,260 +120,51 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>4</item>
-        <item>12</item>
+        <item>5</item>
+        <item>10</item>
         <item>20</item>
-        <item>28</item>
-        <item>47</item>
-        <item>63</item>
-        <item>86</item>
-        <item>150</item>
-        <item>220</item>
-        <item>270</item>
         <item>360</item>
-        <item>420</item>
-        <item>510</item>
-        <item>620</item>
-        <item>1000</item>
-        <item>2000</item>
-        <item>3100</item>
-        <item>3988</item>
-        <item>5018</item>
-        <item>6232</item>
-        <item>7648</item>
-        <item>9280</item>
-        <item>11146</item>
-        <item>13261</item>
-        <item>15640</item>
-        <item>18302</item>
-        <item>21260</item>
-        <item>24532</item>
-        <item>28133</item>
-        <item>32080</item>
-        <item>36388</item>
-        <item>41073</item>
-        <item>46153</item>
-        <item>51642</item>
-        <item>63912</item>
-        <item>78015</item>
-        <item>94076</item>
-        <item>112226</item>
-        <item>132592</item>
-        <item>155302</item>
-        <item>180486</item>
-        <item>208271</item>
-        <item>223180</item>
-        <item>255108</item>
+        <item>1200</item>
+        <item>2250</item>
+        <item>3200</item>
+        <item>30000</item>
+        <item>31000</item>
     </integer-array>
 
-    <!-- Array of desired screen brightness in nits corresponding to the lux values
-         in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
-         config_screenBrightnessMaximumNits, the display brightness is defined as the measured
-         brightness of an all-white image.
-
-         If this is defined then:
-            - config_autoBrightnessLcdBacklightValues should not be defined
-            - config_screenBrightnessNits must be defined
-            - config_screenBrightnessBacklight must be defined
-
-         This array should have size one greater than the size of the config_autoBrightnessLevels
-         array. The brightness values must be non-negative and non-decreasing. This must be
-         overridden in platform specific overlays -->
-    <array name="config_autoBrightnessDisplayValuesNits">
-        <item>2.0487</item>
-        <item>4.8394</item>
-        <item>15.2619</item>
-        <item>33</item>
-        <item>49</item>
-        <item>62.95</item>
-        <item>76.46</item>
-        <item>84.38</item>
-        <item>89.51</item>
-        <item>100.34</item>
-        <item>109.48</item>
-        <item>115</item>
-        <item>117.67</item>
-        <item>122.72</item>
-        <item>131.17</item>
-        <item>141.19</item>
-        <item>167.05</item>
-        <item>234.9</item>
-        <item>279</item>
-        <item>300</item>
-        <item>320</item>
-        <item>340</item>
-        <item>360</item>
-        <item>380</item>
-        <item>400</item>
-        <item>420</item>
-        <item>440</item>
-        <item>460</item>
-        <item>480</item>
-        <item>500</item>
-        <item>520</item>
-        <item>540</item>
-        <item>560</item>
-        <item>580</item>
-        <item>600</item>
-        <item>620</item>
-        <item>660</item>
-        <item>700</item>
-        <item>740</item>
-        <item>780</item>
-        <item>820</item>
-        <item>860</item>
-        <item>900</item>
-        <item>940</item>
-        <item>960</item>
-        <item>1000</item>
-    </array>
-
-    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
-         values in the config_screenBrightnessBacklight array.  On OLED displays these  values
-         should be measured with an all white image while the display is in the fully on state.
-         Note that this value should *not* reflect the maximum brightness value for any high
-         brightness modes but only the maximum brightness value obtainable in a sustainable manner.
-
-         This array should be equal in size to config_screenBrightnessBacklight -->
-    <array name="config_screenBrightnessNits">
-        <item>0.0</item>
-        <item>2.1</item>
-        <item>2.31</item>
-        <item>2.63</item>
-        <item>3.16</item>
-        <item>3.73</item>
-        <item>4.42</item>
-        <item>5.45</item>
-        <item>6.69</item>
-        <item>8.07</item>
-        <item>9.65</item>
-        <item>11.32</item>
-        <item>13.26</item>
-        <item>15.59</item>
-        <item>18.14</item>
-        <item>20.68</item>
-        <item>23.58</item>
-        <item>26.38</item>
-        <item>29.67</item>
-        <item>32.83</item>
-        <item>36.03</item>
-        <item>39.31</item>
-        <item>43.8</item>
-        <item>47.95</item>
-        <item>52.08</item>
-        <item>56.86</item>
-        <item>61.83</item>
-        <item>67.93</item>
-        <item>73.37</item>
-        <item>79.96</item>
-        <item>86.15</item>
-        <item>90.75</item>
-        <item>97.83</item>
-        <item>105.67</item>
-        <item>112.79</item>
-        <item>120.33</item>
-        <item>127.82</item>
-        <item>135.71</item>
-        <item>145.0</item>
-        <item>153.32</item>
-        <item>161.78</item>
-        <item>170.61</item>
-        <item>179.7</item>
-        <item>190.25</item>
-        <item>201.81</item>
-        <item>212.07</item>
-        <item>222.79</item>
-        <item>234.01</item>
-        <item>246.43</item>
-        <item>257.49</item>
-        <item>269.8</item>
-        <item>281.41</item>
-        <item>293.94</item>
-        <item>307.58</item>
-        <item>322.53</item>
-        <item>335.82</item>
-        <item>349.68</item>
-        <item>364.86</item>
-        <item>379.57</item>
-        <item>398.55</item>
-        <item>413.85</item>
-        <item>429.97</item>
-        <item>442.89</item>
-        <item>461.76</item>
-        <item>478.65</item>
-    </array>
-
-    <!-- An array describing the screen's backlight values corresponding to the brightness
-         values in the config_screenBrightnessNits array.
-
-         This array should be equal in size to config_screenBrightnessBacklight. -->
-    <integer-array name="config_screenBrightnessBacklight">
-        <item>0</item>
-        <item>4</item>
-        <item>8</item>
-        <item>12</item>
-        <item>16</item>
-        <item>20</item>
-        <item>24</item>
-        <item>28</item>
-        <item>32</item>
-        <item>36</item>
-        <item>40</item>
-        <item>44</item>
-        <item>48</item>
-        <item>52</item>
-        <item>56</item>
+    <!-- Sets the minimum and maximum tilt tolerance for each possible rotation.
+         This array consists of 4 pairs of values which specify the minimum and maximum
+         tilt angle at which the device will transition into each rotation.
+         The tilt angle represents the direction in which the plane of the screen is facing;
+         it is also known as the angle of elevation.
+           -90 degree tilt means that the screen is facing straight down
+                           (the device is being held overhead upside-down)
+             0 degree tilt means that the screen is facing outwards
+                           (the device is being held vertically)
+            90 degree tilt means that the screen is facing straight up
+                           (the device is resting on a flat table)
+        The default tolerances are set conservatively such that the device is more
+        likely to remain in its natural orientation than rotate into a counterclockwise,
+        clockwise, or reversed posture (with an especially strong bias against the latter)
+        to prevent accidental rotation while carrying the device in hand.
+        These thresholds may need to be tuned when the device is intended to be
+        mounted into a dock with a particularly shallow profile wherein rotation
+        would ordinarily have been suppressed.
+        It is helpful to consider the desired behavior both when the device is being
+        held at a positive tilt (typical case) vs. a negative tilt (reading overhead in
+        bed) since they are quite different.  In the overhead case, we typically want
+        the device to more strongly prefer to retain its current configuration (in absence
+        of a clear indication that a rotation is desired) since the user's head and neck may
+        be held at an unusual angle.
+    -->
+    <integer-array name="config_autoRotationTiltTolerance">
+        <item>-25</item>
+        <item>70</item>
+        <item>-25</item>
+        <item>65</item>
+        <item>-25</item>
         <item>60</item>
-        <item>64</item>
-        <item>68</item>
-        <item>72</item>
-        <item>76</item>
-        <item>80</item>
-        <item>84</item>
-        <item>88</item>
-        <item>92</item>
-        <item>96</item>
-        <item>100</item>
-        <item>104</item>
-        <item>108</item>
-        <item>112</item>
-        <item>116</item>
-        <item>120</item>
-        <item>123</item>
-        <item>127</item>
-        <item>131</item>
-        <item>135</item>
-        <item>139</item>
-        <item>143</item>
-        <item>147</item>
-        <item>151</item>
-        <item>155</item>
-        <item>159</item>
-        <item>163</item>
-        <item>167</item>
-        <item>171</item>
-        <item>175</item>
-        <item>179</item>
-        <item>183</item>
-        <item>187</item>
-        <item>191</item>
-        <item>195</item>
-        <item>199</item>
-        <item>203</item>
-        <item>207</item>
-        <item>211</item>
-        <item>215</item>
-        <item>219</item>
-        <item>223</item>
-        <item>227</item>
-        <item>231</item>
-        <item>235</item>
-        <item>239</item>
-        <item>243</item>
-        <item>246</item>
-        <item>251</item>
-        <item>255</item>
+        <item>-25</item>
+        <item>65</item>
     </integer-array>
 
     <!-- Screen brightness used to dim the screen when the user activity
