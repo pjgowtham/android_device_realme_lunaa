@@ -431,10 +431,10 @@
          Note that a physical cutout should be configured in pixels for the best results.
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 99,68.5
-        M 65,68.5
-        A 34,34 0 1,0 133,68.5
-        A 34,34 0 1,0 65,68.5
+        M 105 74 
+        M 72 77 
+        A 32 32 0 1 0 137 72 
+        A 32 32 0 1 0 72 77
         Z
         @left
     </string>
