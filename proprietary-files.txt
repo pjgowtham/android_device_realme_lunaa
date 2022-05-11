@@ -354,21 +354,11 @@ odm/etc/camera/fw_lut/skinLUTs_yuv16_10.bin
 odm/etc/camera/fw_lut/skinLUTs_yuv16_11.bin
 odm/etc/camera/fw_lut/skinLUTs_yuv16_12.bin
 odm/etc/camera/fw_lut/skinLUTs_yuv16_13.bin
-odm/etc/camera/megvii/fusion_model
-odm/etc/camera/megvii/fusion_model_post
-odm/etc/camera/megvii/merged_model
-odm/etc/camera/megvii/merged_model_post
-odm/etc/camera/megvii/video_retention_model
-odm/etc/camera/megvii/video_retention_model_post
-odm/etc/camera/megvii/videolut_background.png
-odm/etc/camera/megvii/videolut_portrait.png
-odm/etc/camera/megvii/videolut_portrait_front.png
 odm/etc/camera/micFilter/blue_pink_3.png
 odm/etc/camera/micFilter/curve_0.png
 odm/etc/camera/micFilter/green_orange_2.png
 odm/etc/camera/micFilter/yellow_green_1.png
 odm/etc/camera/model/DocDetectV15.xbin
-odm/etc/camera/model/license.lic
 odm/etc/camera/motionblur/model.data
 odm/etc/camera/pf/PerfectColorSet/normal/colorLut0
 odm/etc/camera/pf/PerfectColorSet/normal/colorLut1
@@ -532,7 +522,6 @@ odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneBinary.bin
 odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneMRTBinary.bin
 odm/etc/camera/pfb_bin/ThirdPartyPreVertFilterBinary.bin
 odm/etc/camera/pfb_bin/ThirdPartyPreVertSurBinary.bin
-odm/etc/camera/singleblur/license_release.license
 odm/etc/camera/sticker/material/animoji/data.zip
 odm/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip
 odm/etc/camera/sticker/M_SenseME_Action_5.2.12.model
@@ -571,7 +560,6 @@ odm/etc/camera/fb_default
 odm/etc/camera/fdc_cl.cache
 odm/etc/camera/fwk_config.json
 odm/etc/camera/gasryuv_1.2_wp.model
-odm/etc/camera/license_release_fdc.lic
 odm/etc/camera/model_fdc.data
 odm/etc/camera/mtStereoParams.bin
 odm/etc/camera/mwStereoParams.bin
@@ -595,8 +583,6 @@ odm/lib64/camera/com.qti.tuned.qtech_ov64b.bin
 odm/lib64/camera/com.qti.tuned.sunny_hi846.bin
 odm/lib64/camera/com.qti.tuned.sunny_imx615.bin
 odm/lib64/lib2DSlender.so
-odm/lib64/libAlgoInterface.so
-odm/lib64/libAlgoProcess.so
 odm/lib64/libAncFilter.so
 odm/lib64/libAncHumBokeh.so
 odm/lib64/libAncHumBokehPost.so
@@ -623,7 +609,6 @@ odm/lib64/libPerfectColor.so
 odm/lib64/libPerfectlyClearCrux.so
 odm/lib64/libPerfectlyClearCruxOpt.so
 odm/lib64/libPolarrRender.so
-odm/lib64/libPreviewDecisionOld.so
 odm/lib64/libRedeyeReduce.so
 odm/lib64/libSNPE.so
 odm/lib64/libSNPE_G.so
