@@ -189,7 +189,6 @@ odm/lib64/libEIS.so
 odm/lib64/libFaceBeautyCap.so
 odm/lib64/libFaceBeautyPICap.so
 odm/lib64/libFaceBeautyPre.so
-odm/lib64/libFaceDistortionCorrection.so
 odm/lib64/libFaceWhiten.so
 odm/lib64/libFilterWrapper.so
 odm/lib64/libOGLManager.so
@@ -261,7 +260,6 @@ odm/lib64/libarcsoft_scbokeh_image.so
 odm/lib64/libarcsoft_scbokeh_video.so
 odm/lib64/libarcsoft_smart_denoise.so
 odm/lib64/libarcsoft_smart_denoise_v4.so
-odm/lib64/libarcsoft_super_night_raw.so
 odm/lib64/libarcsoft_videoautozoom.so
 odm/lib64/libavcodec.so
 odm/lib64/libavformat.so
@@ -289,12 +287,8 @@ odm/lib64/libsnpe_dsp_domains_v3.so
 odm/lib64/libsnpe_htp.so
 odm/lib64/libsnpe_loader.so
 odm/lib64/libsnpeml.so
-odm/lib64/libstblur_api.so
-odm/lib64/libstblur_capture_api.so
 odm/lib64/libstdc++.so
-odm/lib64/libstface_fd_api.so
 odm/lib64/libstfaceunlockocl.so
-odm/lib64/libstfd_mobile_api.so
 odm/lib64/libtriplecam_image_optical_zoom.so
 odm/lib64/libtriplecam_optical_zoom_control.so
 odm/lib64/libtriplecam_video_optical_zoom.so
@@ -427,7 +421,6 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libcvface_api.so
 vendor/lib64/libface3d_dev.so
 vendor/lib64/libgui1_vendor.so
 vendor/lib64/libipebpsstriping.so
