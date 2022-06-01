@@ -6,6 +6,10 @@
 
 DEVICE_PATH := device/oplus/RMX3360
 
+# Kernel/DTB
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+
 # Include the common OEM chipset BoardConfig.
 include device/oplus/sm8350-common/BoardConfigCommon.mk
 
