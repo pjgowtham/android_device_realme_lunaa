@@ -563,8 +563,8 @@
     <ctl name="MultiMedia6 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia6" value="0" />
     <ctl name="HDMI Mixer MultiMedia16" value="0" />
-    <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode1" value="0" />
-    <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode2" value="0" />
+    <ctl name="DISPLAY_PORT_RX1_Voice Mixer VoiceMMode1" value="0" />
+    <ctl name="DISPLAY_PORT_RX1_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia31" value="0" />
     <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia31" value="0" />
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia31" value="0" />
@@ -2852,7 +2852,7 @@
     </path>
 
     <path name="voicemmode1-call display-port1-and-usb-headset-mic">
-        <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode1" value="1" />
+        <ctl name="DISPLAY_PORT_RX1_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer USB_AUDIO_TX_MMode1" value="1" />
     </path>
 
@@ -2862,7 +2862,7 @@
     </path>
 
     <path name="voicemmode1-call display-port1">
-        <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode1" value="1" />
+        <ctl name="DISPLAY_PORT_RX1_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
     </path>
 
@@ -2937,7 +2937,7 @@
     </path>
 
     <path name="voicemmode2-call display-port1-and-usb-headset-mic">
-        <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode2" value="1" />
+        <ctl name="DISPLAY_PORT_RX1_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer USB_AUDIO_TX_MMode2" value="1" />
     </path>
 
@@ -2947,7 +2947,7 @@
     </path>
 
     <path name="voicemmode2-call display-port1">
-        <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode2" value="1" />
+        <ctl name="DISPLAY_PORT_RX1_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
     </path>
 

@@ -140,6 +140,8 @@
         <!--#Juqiang.Geng@MULTIMEDIA.AUDIODRIVER.HAL, 2020/08/24, Add for AP LVIMFS end-->
         <!--#Yongzhi.Zhang@PSW.MM.AudioDriver.HAL.413701, 2020/09/22, Add for old audiovoice scence-->
         <param key="use_audiovoice_scence" value="false"/>
+        <!--Jie.Du@MULTIMEDIA.AUDIODRIVER.HAL, 2021/01/20, add for audioscence v2-->
+        <param key="use_audiovoice_scence_v2" value="false"/>
         <!--alvin.zhang@MULTIMEDIA.AUDIODRIVER.HAL.OPLUS_FEATURE_VIBRING_SYNC, 2021/01/04, Add vibrator ring sync -->
         <param key="vibring_sync" value="true"/>
         <!--alvin.zhang@MULTIMEDIA.AUDIODRIVER.HAL.OPLUS_FEATURE_VIBRING_SYNC, 2021/01/04, Add vibrator ring sync end-->
@@ -185,7 +187,6 @@
         <!--MinYi.Hu@MULTIMEDIA.AUDIODRIVER.HAL, 2021/08/18, add for HAC-->
         <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" acdb_id="103"/>
         <device name="SND_DEVICE_IN_VOICE_HAC_HANDSET_DMIC" acdb_id="105"/>
-        <!--<device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" acdb_id="7"/>-->
         <!--MinYi.Hu@MULTIMEDIA.AUDIODRIVER.HAL, 2021/08/18, add for HAC end-->
         <!--#Jianfeng.Qiu@PSW.MM.AudioDriver.HAL, 2017/09/22, Add for oplus config-->
         <device name="SND_DEVICE_IN_UNPROCESSED_USB_HEADSET_MIC" acdb_id="133"/>
@@ -471,6 +472,9 @@
         <device name="SND_DEVICE_IN_SPEAKER_MIC_VOICE_RECORD_GAME" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_CAMCORDER_SELFIE" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC_LOW_LATENCY" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
+        <!--zhangrun@MULTIMEDIA.AUDIODRIVER.OPLUS_FEATURE_VIDEO_SWITCH, 2021/02/22, Add for Video sound to switch START -->
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_STEREO_SWITCH" interface="TX_CDC_DMA_TX_3"/>
+        <!--zhangrun@MULTIMEDIA.AUDIODRIVER.OPLUS_FEATURE_VIDEO_SWITCH, 2021/02/22, Add for Video sound to switch END -->
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>
