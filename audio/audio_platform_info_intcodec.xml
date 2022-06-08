@@ -239,16 +239,22 @@
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_TMIC" acdb_id="43"/>
         <!-- VOIP MIC device force using acdb id, 108 and 114 for 1MIC, 111 and 117 for 2MIC, 156 and 160 for 3MIC -->
         <device name="SND_DEVICE_IN_HANDSET_MIC_AEC" acdb_id="108"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_AEC_NS" acdb_id="108"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_NS" acdb_id="108"/>
         <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC" acdb_id="114"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC_NS" acdb_id="114"/>
         <device name="SND_DEVICE_IN_SPEAKER_MIC_NS" acdb_id="114"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC" acdb_id="111"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS" acdb_id="111"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_NS" acdb_id="111"/>
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC" acdb_id="117"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" acdb_id="117"/>
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_NS" acdb_id="117"/>
         <device name="SND_DEVICE_IN_HANDSET_TMIC_AEC" acdb_id="156"/>
+        <device name="SND_DEVICE_IN_HANDSET_TMIC_AEC_NS" acdb_id="156"/>
         <device name="SND_DEVICE_IN_HANDSET_TMIC_NS" acdb_id="156"/>
         <device name="SND_DEVICE_IN_SPEAKER_TMIC_AEC" acdb_id="160"/>
+        <device name="SND_DEVICE_IN_SPEAKER_TMIC_AEC_NS" acdb_id="160"/>
         <device name="SND_DEVICE_IN_SPEAKER_TMIC_NS" acdb_id="160"/>
         <!--Yongzhi.Zhang@MULTIMEDIA.AUDIODRIVER.HAL, 2020/08/31, Add for force acdb id END -->
         <!-- Voice Recognition device force using acdb id, 107 for 1MIC, 109 for 2MIC, 125 for 3MIC(default) -->
