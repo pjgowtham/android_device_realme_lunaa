@@ -23,9 +23,9 @@ odm/etc/bt/second_rf.conf
 odm/etc/camera/config/camera_unit_config
 odm/etc/camera/config/oplus_camera_aps_config
 odm/etc/camera/config/oplus_camera_config
+odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/calibrationOutput_uw.bin
 odm/etc/camera/calibrationOutput_uw_686.bin
-odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/engineer_camera_config
 odm/etc/camera/settings_fdc.txt
 odm/lib64/camera/com.qti.sensor.imx689.lemonade.so
