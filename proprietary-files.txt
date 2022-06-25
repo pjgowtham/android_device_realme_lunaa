@@ -566,6 +566,12 @@ vendor/firmware/a660_zap.mdt
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
+# Media
+vendor/etc/media_codecs_yupik_v1.xml
+vendor/etc/media_codecs_performance_yupik_v1.xml
+vendor/etc/media_profiles_yupik_v1.xml
+vendor/etc/media_yupik_v1/video_system_specs.json
+
 # NFC
 odm/etc/init/init.st54x.nfc.rc
 odm/etc/nfc/libnfc-hal-st.conf_21675:vendor/etc/libnfc-hal-st.conf
