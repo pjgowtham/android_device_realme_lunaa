@@ -584,6 +584,15 @@ odm/etc/nfc/libse-gto-hal.conf_21604:vendor/etc/libse-gto-hal.conf
 odm/etc/nfc/st21nfc_fw.bin_st21h:vendor/firmware/st21nfc_fw.bin
 odm/etc/nfc/st21nfc_fw7.bin_st21h:vendor/firmware/st21nfc_fw7.bin
 
+# Recovery
+odm/etc/21675/build.default.prop
+odm/etc/21675/build.eea.prop
+odm/etc/21675/build.gsi.prop
+odm/etc/21675/build.ru.prop
+odm/etc/21675/build.t2.prop
+odm/etc/21675/build.tr.prop
+odm/etc/21675/flags.prop
+
 # Sensors
 odm/etc/sensor/config/alsps.json
 odm/etc/sensor/config/kodiak_ak991x_0.json
