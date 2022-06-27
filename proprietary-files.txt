@@ -14,6 +14,34 @@ odm/etc/acdbdata/Speaker_cal.acdb
 # Audio Firmware
 odm/firmware/tfa98xx.cnt
 
+# Audio LVIMFS Params
+odm/etc/lvimfs_params/LVACFS_Configuration.txt
+odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
+
 # Bluetooth Firmware
 odm/etc/bt/hpnv10.bin
 odm/etc/bt/hpnv10_1.bin
