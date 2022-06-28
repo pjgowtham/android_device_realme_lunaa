@@ -94,40 +94,11 @@ vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 # Audio firmware
 odm/firmware/tfa98xx.cnt
 
-# Audio-Hardware
+# Audio configs for prebuilt audio hal
 odm/etc/audio_platform_info.xml
 odm/etc/mixer_paths.xml
 odm/etc/sound_trigger_mixer_paths.xml
 odm/etc/sound_trigger_platform_info.xml
-odm/lib/libaudioEngineerTest.so
-odm/lib/libextcamera_client.so
-odm/lib/libgui1_vendor.so
-odm/lib/liblvimfs.so
-odm/lib/liblvimfs_wrapper.so
-odm/lib/libui.so
-odm/lib/vendor.oplus.hardware.extcamera@1.0.so
-odm/lib64/libaudioEngineerTest.so
-odm/lib64/libextcamera_client.so
-odm/lib64/libgui1_vendor.so
-odm/lib64/liblvimfs.so
-odm/lib64/liblvimfs_wrapper.so
-odm/lib64/libui.so
-odm/lib64/vendor.oplus.hardware.extcamera@1.0.so
-vendor/lib/hw/audio.primary.lahaina.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioconfigstore.so
-vendor/lib/libgui1_vendor.so
-vendor/lib/libqtigef.so
-vendor/lib/libssrec.so
-vendor/lib/libtinycompress.so
-vendor/lib64/hw/audio.primary.lahaina.so
-vendor/lib64/liba2dpoffload.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudioconfigstore.so
-vendor/lib64/libqtigef.so
-vendor/lib64/libssrec.so
-vendor/lib64/libtinycompress.so
 
 # Audio (Goodix LVIMFS)
 odm/etc/lvimfs_params/LVACFS_Configuration.txt
