@@ -58,6 +58,8 @@
         <param concurrent_capture="false" />
         <param concurrent_voip_call="false" />
         <param concurrent_voice_call="false" />
+        <!-- Single mic wakeup keyword data size=2*16000*2, dual mic=2*size, ... -->
+        <param keyword_data_bytes="128000" />
     </common_config>
     <acdb_ids>
         <param DEVICE_HANDSET_MIC_APE="100" />
@@ -86,7 +88,7 @@
         <!-- Profile specific data which the algorithm can support -->
         <param sample_rate="16000" />
         <param bit_width="16" />
-        <param out_channels="1"/> <!-- Module output channels -->
+        <param out_channels="2"/> <!-- Module output channels -->
         <param dam_token_id="1"/>
 
         <arm_ss_usecase>
@@ -138,17 +140,15 @@
             <param lpi_mode="NON_LPI_BARGE_IN" />
             <param app_type="2" /> <!-- app type used in ACDB -->
             <param pdk5_app_type="5" />
-            <param in_channels="3"/> <!-- Module input channels -->
+            <param in_channels="2"/> <!-- Module input channels -->
             <module_params>
                 <param module_type="GMM" />
-                <param load_sound_model_ids="0x00012C1C, 0x0, 0x00012C14" />
-                <param unload_sound_model_ids="0x00012C1C, 0x0, 0x00012C15" />
-                <param confidence_levels_ids="0x00012C1C, 0x0, 0x00012C07" />
-                <param operation_mode_ids="0x00012C1C, 0x0, 0x00012C02" />
-                <param polling_enable_ids="0x00012C1C, 0x0, 0x00012C1B" />
-                <param custom_config_ids="0x00012C1C, 0x0, 0x00012C20" />
-                <param det_event_type_ids="0x00012C1C, 0x0, 0x00012C2C" />
-                <param lab_dam_cfg_ids="0x00012C08, 0x0, 0x000102C4" />
+                <param load_sound_model_ids="0x10001056, 0x0, 0x00012C14" />
+                <param unload_sound_model_ids="0x10001056, 0x0, 0x00012C15" />
+                <param confidence_levels_ids="0x10001056, 0x0, 0x00012C07" />
+                <param operation_mode_ids="0x10001056, 0x0, 0x00012C02" />
+                <param polling_enable_ids="0x10001056, 0x0, 0x00012C1B" />
+                <param custom_config_ids="0x10001056, 0x0, 0x00012C20" />
             </module_params>
             <module_params>
                 <param module_type="PDK5" />
@@ -180,17 +180,15 @@
             <param lpi_mode="LPI" />
             <param app_type="2" /> <!-- app type used in ACDB -->
             <param pdk5_app_type="5" />
-            <param in_channels="1"/> <!-- Module input channels -->
+            <param in_channels="2"/> <!-- Module input channels -->
             <module_params>
                 <param module_type="GMM" />
-                <param load_sound_model_ids="0x00012C1C, 0x0, 0x00012C14" />
-                <param unload_sound_model_ids="0x00012C1C, 0x0, 0x00012C15" />
-                <param confidence_levels_ids="0x00012C1C, 0x0, 0x00012C07" />
-                <param operation_mode_ids="0x00012C1C, 0x0, 0x00012C02" />
-                <param polling_enable_ids="0x00012C1C, 0x0, 0x00012C1B" />
-                <param custom_config_ids="0x00012C1C, 0x0, 0x00012C20" />
-                <param det_event_type_ids="0x00012C1C, 0x0, 0x00012C2C" />
-                <param lab_dam_cfg_ids="0x00012C08, 0x0, 0x000102C4" />
+                <param load_sound_model_ids="0x10001056, 0x0, 0x00012C14" />
+                <param unload_sound_model_ids="0x10001056, 0x0, 0x00012C15" />
+                <param confidence_levels_ids="0x10001056, 0x0, 0x00012C07" />
+                <param operation_mode_ids="0x10001056, 0x0, 0x00012C02" />
+                <param polling_enable_ids="0x10001056, 0x0, 0x00012C1B" />
+                <param custom_config_ids="0x10001056, 0x0, 0x00012C20" />
             </module_params>
             <module_params>
                 <param module_type="PDK5" />
@@ -308,7 +306,7 @@
         <param sample_rate="16000" />
         <param bit_width="16" />
         <param out_channels="1"/> <!-- Module output channels -->
-        <param get_module_version="false"/>
+        <param get_module_version="true"/>
         <lsm_usecase>
             <param capture_device="HANDSET" />
             <!-- adm_cfg_profile should match with the one defined under adm_config -->
