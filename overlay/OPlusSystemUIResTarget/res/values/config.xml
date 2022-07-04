@@ -5,6 +5,9 @@
 -->
 <resources>
 
+    <!-- Color of the UDFPS Pressed view -->
+    <color name="config_udfpsColor">#00ffffff</color>
+
     <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
     <bool name="config_roundedCornerMultipleRadius">true</bool>
 
