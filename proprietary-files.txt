@@ -574,10 +574,7 @@ vendor/etc/media_yupik_v1/video_system_specs.json
 
 # NFC
 odm/etc/init/init.st54x.nfc.rc
-odm/etc/nfc/libnfc-hal-st.conf_21675:vendor/etc/libnfc-hal-st.conf
-odm/etc/nfc/libnfc-nci.conf_21675:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/libnfc-st21h_conf.txt_21675:vendor/etc/libnfc-st21h_conf.txt
-odm/etc/nfc/libse-gto-hal.conf_21604:vendor/etc/libse-gto-hal.conf
 odm/etc/nfc/st21nfc_fw.bin_st21h:vendor/firmware/st21nfc_fw.bin
 odm/etc/nfc/st21nfc_fw7.bin_st21h:vendor/firmware/st21nfc_fw7.bin
 
