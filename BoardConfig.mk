@@ -9,9 +9,6 @@ include device/oneplus/sm8350-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/oneplus/lemonade
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
-
 # Display
 TARGET_SCREEN_DENSITY := 450
 
