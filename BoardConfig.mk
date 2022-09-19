@@ -9,9 +9,6 @@ DEVICE_PATH := device/oplus/RMX3360
 # Include the common OEM chipset BoardConfig.
 include device/oplus/sm8350-common/BoardConfigCommon.mk
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
-
 # Display
 TARGET_SCREEN_DENSITY := 450
 
