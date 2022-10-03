@@ -1,0 +1,5 @@
+allow hal_sensors_default als_correction_service:process signal;
+
+get_prop(hal_sensors_default, vendor_sensors_als_prop)
+
+r_dir_file(als_correction_service, vendor_proc_oplus_als_file)
