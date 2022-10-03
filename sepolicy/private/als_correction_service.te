@@ -1,0 +1,23 @@
+type als_correction_service_exec, system_file_type, exec_type, file_type;
+
+init_daemon_domain(als_correction_service)
+
+typeattribute als_correction_service system_writes_vendor_properties_violators;
+
+hal_client_domain(als_correction_service, hal_graphics_allocator)
+
+binder_use(als_correction_service)
+
+binder_call(als_correction_service, surfaceflinger)
+binder_call(surfaceflinger, als_correction_service)
+
+allow als_correction_service hal_graphics_allocator_hwservice:hwservice_manager find;
+allow als_correction_service hal_graphics_mapper_hwservice:hwservice_manager find;
+
+allow als_correction_service surfaceflinger_service:service_manager find;
+
+allow als_correction_service same_process_hal_file:file r_file_perms;
+
+allow als_correction_service ion_device:chr_file rw_file_perms;
+
+set_prop(als_correction_service, vendor_sensors_als_prop)
