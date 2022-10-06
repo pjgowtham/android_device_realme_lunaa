@@ -637,5 +637,10 @@ vendor/etc/sensors/config/lahaina_hhg_lsm6dst_0.json
 vendor/etc/sensors/config/lahaina_hhg_sx9302x_0.json
 vendor/etc/sensors/config/lahaina_hhg_tmd3702_0.json
 
+# Vibrator
+odm/bin/hw/vendor.qti.hardware.vibrator.service:vendor/bin/hw/vendor.qti.hardware.vibrator.service.oplus
+odm/lib64/vendor.qti.hardware.vibrator.impl.so:vendor/lib64/vendor.qti.hardware.vibrator.impl.so
+odm/lib64/libqtivibratoreffect.so:vendor/lib64/libqtivibratoreffect.so
+
 # WiFi
 odm/etc/wifi/bdwlan.elf
