@@ -514,6 +514,7 @@
     <!--Add for smartpa err feedback-->
     <ctl name="TFA_CHECK_FEEDBACK" value="Off" />
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="0" />
+    <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia2" value="0" />
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia4" value="0" />
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia5" value="0" />
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia7" value="0" />
@@ -4411,7 +4412,17 @@
     <path name="hifi-playback usb-headphones">
         <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia2" value="1" />
     </path>
+    <path name="hifi-playback">
+        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia2" value="1" />
+    </path>
 
+    <path name="hifi-playback speaker">
+        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia2" value="1" />
+    </path>
+
+    <path name="hifi-playback handset">
+        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia2" value="1" />
+    </path>
     <path name="hifi-record">
         <ctl name="MultiMedia2 Mixer TX_CDC_DMA_TX_3" value="1" />
     </path>
