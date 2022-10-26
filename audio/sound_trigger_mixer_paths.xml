@@ -84,9 +84,6 @@
     <ctl name="EC Reference Bit Format" value="0"/>
     <ctl name="EC Reference SampleRate" value="0"/>
     <ctl name="ADC2_MIXER Switch" value="0" />
-    <ctl name="DMIC1_MIXER Switch" value="0" />
-    <ctl name="DMIC3_MIXER Switch" value="0" />
-    <ctl name="DMIC4_MIXER Switch" value="0" />
     <ctl name="LPI Enable" value="0" />
     <ctl name="ADC2 Volume" value="12" />
     <ctl name="VA_DEC0 MODE" value="ADC_DEFAULT" />
@@ -259,11 +256,12 @@
     </path>
 
     <path name="listen-ape-handset-mic">
-        
         <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
-        <ctl name="VA DEC0 MUX" value="MSM_DMIC" />
-        <ctl name="VA DMIC MUX0" value="DMIC1" />
-     
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC3" />
+        <ctl name="SWR_MIC3 LP PortMap" value="SWRM_TX1_CH4" />
+        <ctl name="VA_DEC0 Volume" value="84" />
+        <ctl name="SWR_MIC3 SWR_DMIC_VA_MIXER Switch" value="1" />
     </path>
 
     <path name="listen-ape-handset-mic-preproc">
@@ -274,11 +272,16 @@
         <ctl name="VA_CDC_DMA_TX_0 Channels" value="Two" />
         <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="VA_AIF1_CAP Mixer DEC1" value="1" />
-        <ctl name="VA DEC0 MUX" value="MSM_DMIC" />
-        <ctl name="VA DEC1 MUX" value="MSM_DMIC" />
-        <ctl name="VA DMIC MUX0" value="DMIC1" />
-        <ctl name="VA DMIC MUX1" value="DMIC3" />
-
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC1 MUX" value="SWR_MIC" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC3" />
+        <ctl name="VA SMIC MUX1" value="SWR_MIC0" />
+        <ctl name="SWR_MIC3 LP PortMap" value="SWRM_TX1_CH4" />
+        <ctl name="SWR_MIC0 LP PortMap" value="SWRM_TX1_CH1" />
+        <ctl name="VA_DEC0 Volume" value="84" />
+        <ctl name="VA_DEC1 Volume" value="84" />
+        <ctl name="SWR_MIC3 SWR_DMIC_VA_MIXER Switch" value="1" />
+        <ctl name="SWR_MIC0 SWR_DMIC_VA_MIXER Switch" value="1" />
     </path>
 
     <path name="listen-ape-handset-tmic">
@@ -286,18 +289,21 @@
         <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="VA_AIF1_CAP Mixer DEC1" value="1" />
         <ctl name="VA_AIF1_CAP Mixer DEC2" value="1" />
-        <ctl name="VA DEC0 MUX" value="MSM_DMIC" />
-        <ctl name="VA DEC1 MUX" value="MSM_DMIC" />
-        <ctl name="VA DEC2 MUX" value="MSM_DMIC" />
-        <ctl name="VA DMIC MUX0" value="DMIC1" />
-        <ctl name="VA DMIC MUX1" value="DMIC3" />
-        <ctl name="VA DMIC MUX2" value="DMIC4" />
-        <ctl name="VA_DEC0 Volume" value="74" />
-        <ctl name="VA_DEC1 Volume" value="74" />
-        <ctl name="VA_DEC2 Volume" value="74" />
-        <ctl name="DMIC1_MIXER Switch" value="1" />
-        <ctl name="DMIC3_MIXER Switch" value="1" />
-        <ctl name="DMIC4_MIXER Switch" value="1" />
+        <ctl name="VA DEC0 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC1 MUX" value="SWR_MIC" />
+        <ctl name="VA DEC2 MUX" value="SWR_MIC" />
+        <ctl name="VA SMIC MUX0" value="SWR_MIC11" />
+        <ctl name="VA SMIC MUX1" value="SWR_MIC8" />
+        <ctl name="VA SMIC MUX2" value="SWR_MIC9" />
+        <ctl name="SWR_MIC3 HIFI PortMap" value="SWRM_TX3_CH4" />
+        <ctl name="SWR_MIC0 HIFI PortMap" value="SWRM_TX3_CH1" />
+        <ctl name="SWR_MIC2 HIFI PortMap" value="SWRM_TX3_CH2" />
+        <ctl name="VA_DEC0 Volume" value="99" />
+        <ctl name="VA_DEC1 Volume" value="99" />
+        <ctl name="VA_DEC2 Volume" value="99" />
+        <ctl name="SWR_MIC3 SWR_DMIC_MIXER Switch" value="1" />
+        <ctl name="SWR_MIC0 SWR_DMIC_MIXER Switch" value="1" />
+        <ctl name="SWR_MIC2 SWR_DMIC_MIXER Switch" value="1" />
     </path>
 
     <path name="listen-ape-handset-qmic">
@@ -318,10 +324,10 @@
         <ctl name="SWR_MIC0 HIFI PortMap" value="SWRM_TX3_CH1" />
         <ctl name="SWR_MIC1 HIFI PortMap" value="SWRM_TX3_CH2" />
         <ctl name="SWR_MIC2 HIFI PortMap" value="SWRM_TX3_CH3" />
-        <ctl name="VA_DEC0 Volume" value="74" />
-        <ctl name="VA_DEC1 Volume" value="74" />
-        <ctl name="VA_DEC2 Volume" value="74" />
-        <ctl name="VA_DEC3 Volume" value="74" />
+        <ctl name="VA_DEC0 Volume" value="99" />
+        <ctl name="VA_DEC1 Volume" value="99" />
+        <ctl name="VA_DEC2 Volume" value="99" />
+        <ctl name="VA_DEC3 Volume" value="99" />
         <ctl name="SWR_MIC3 SWR_DMIC_MIXER Switch" value="1" />
         <ctl name="SWR_MIC0 SWR_DMIC_MIXER Switch" value="1" />
         <ctl name="SWR_MIC1 SWR_DMIC_MIXER Switch" value="1" />
@@ -342,14 +348,14 @@
     </path>
 
     <path name="echo-reference">
-        <ctl name="AUDIO_REF_EC_UL1 MUX" value="TERT_MI2S_RX"/>
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="WSA_CDC_DMA_RX_0"/>
         <ctl name="EC Reference Channels" value="Two"/>
         <ctl name="EC Reference Bit Format" value="S16_LE"/>
         <ctl name="EC Reference SampleRate" value="48000"/>
     </path>
 
     <path name="echo-reference handset">
-        <ctl name="AUDIO_REF_EC_UL1 MUX" value="TERT_MI2S_RX" />
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="WSA_CDC_DMA_RX_0" />
         <ctl name="EC Reference Channels" value="One"/>
         <ctl name="EC Reference Bit Format" value="S16_LE"/>
         <ctl name="EC Reference SampleRate" value="48000"/>
@@ -372,5 +378,4 @@
         <ctl name="EC Reference Bit Format" value="S16_LE"/>
         <ctl name="EC Reference SampleRate" value="48000"/>
     </path>
-
 </mixer>
