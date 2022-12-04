@@ -518,7 +518,7 @@ vendor/firmware/vpu20_1v.mbn
 vendor/firmware/vpu20_1v.mdt
 vendor/firmware/vpu20_1v_unsigned.mbn
 
-# Graphics (Adreno)
+# Graphics (Adreno) - from PHM110_11.A.20_0200_202211260113 (Oppo reno 9)
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -554,7 +554,7 @@ vendor/lib64/libgsl.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
-# Graphics (Adreno firmware)
+# Graphics (Adreno firmware) - from PHM110_11.A.20_0200_202211260113 (Oppo reno 9)
 vendor/firmware/a660_gmu.bin
 vendor/firmware/a660_sqe.fw
 vendor/firmware/a660_zap.b00
@@ -563,7 +563,7 @@ vendor/firmware/a660_zap.b02
 vendor/firmware/a660_zap.elf
 vendor/firmware/a660_zap.mdt
 
-# Graphics (Vulkan)
+# Graphics (Vulkan) - from PHM110_11.A.20_0200_202211260113 (Oppo reno 9)
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
