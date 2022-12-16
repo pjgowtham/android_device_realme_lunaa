@@ -650,3 +650,9 @@ vendor/etc/sensors/config/lahaina_hhg_tmd3702_0.json
 
 # WiFi
 odm/etc/wifi/bdwlan.elf
+odm/etc/wifi/regdb.bin
+odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
+vendor/bin/cnss-daemon
+vendor/etc/init/init.vendor.wlan.rc
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
