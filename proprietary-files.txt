@@ -53,6 +53,18 @@ odm/lib/rfsa/adsp/libvdblurless_skel.so
 odm/lib/rfsa/adsp/libvdsuperphoto_skel.so
 odm/lib/rfsa/adsp/libworker_pool.so
 
+# Audio
+odm/lib/libaudioEngineerTest.so
+odm/lib/liblvimfs.so
+odm/lib/liblvimfs_wrapper.so
+vendor/lib/hw/audio.primary.lahaina.so
+vendor/lib/liba2dpoffload.so
+vendor/lib/libextcamera_client.so
+vendor/lib/libgui1_vendor.so
+vendor/lib/libssrec.so
+vendor/lib/vendor.oplus.hardware.extcamera@1.0.so
+odm/lib/vendor.oplus.hardware.performance@1.0.so
+
 # Audio firmware
 odm/firmware/tfa98xx.cnt
 
@@ -510,3 +522,9 @@ odm/etc/sensor.cfg
 
 # WiFi
 odm/etc/wifi/bdwlan.elf
+odm/etc/wifi/regdb.bin
+odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
+vendor/bin/cnss-daemon
+vendor/etc/init/init.vendor.wlan.rc
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
