@@ -91,6 +91,18 @@ vendor/lib/rfsa/adsp/libworker_pool.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
+# Audio
+odm/lib/libaudioEngineerTest.so
+odm/lib/liblvimfs.so
+odm/lib/liblvimfs_wrapper.so
+vendor/lib/hw/audio.primary.lahaina.so
+vendor/lib/liba2dpoffload.so
+vendor/lib/libextcamera_client.so
+vendor/lib/libgui1_vendor.so
+vendor/lib/libssrec.so
+vendor/lib/vendor.oplus.hardware.extcamera@1.0.so
+odm/lib/vendor.oplus.hardware.performance@1.0.so
+
 # Audio firmware
 odm/firmware/tfa98xx.cnt
 
