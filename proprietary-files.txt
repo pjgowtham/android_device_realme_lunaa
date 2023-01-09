@@ -125,19 +125,6 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
 # Bluetooth Firmware
 odm/etc/bt/msnv11.bin
 
-
-# Camera (HAL)
-odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service
-odm/etc/init/vendor.oplus.hardware.orms.ormsHalService@1.0-service.rc
-odm/etc/orms/orms_permission_config.xml
--odm/framework/vendor.oplus.hardware.orms.ormsHalService-V1.0-java.jar
-odm/lib64/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so
-odm/lib64/libormshalclient.so
-odm/lib64/libosensehalclient.so
-odm/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so
-odm/lib64/vendor.oplus.hardware.orms@1.0.so
-odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
-
 # Camera
 odm/etc/camera/ancsegbase/anc_cl_kernel.cache
 odm/etc/camera/ancsegbase/model.data
@@ -293,6 +280,8 @@ odm/lib64/libop-ai-beauty-body-detection.so
 odm/lib64/libop-ai-beauty-faceretouch-cn.so
 odm/lib64/liboplus_service.so
 odm/lib64/liboplusvppfilter.so
+odm/lib64/libormshalclient.so
+odm/lib64/libosensehalclient.so
 odm/lib64/libosie_process.so
 odm/lib64/libosie_stub.so
 odm/lib64/libsnpe_dsp_domains_v2.so
@@ -311,6 +300,8 @@ odm/lib64/libtriplecam_optical_zoom_control.so
 odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/libui.so
 odm/lib64/libwatermark_photo.so
+odm/lib64/vendor.oplus.hardware.orms@1.0.so
+odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
 vendor/lib64/camera/components/com.arcsoft.node.eisv2.so
 vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
