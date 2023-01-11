@@ -8,9 +8,6 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from RMX3360 device
-$(call inherit-product, device/oplus/RMX3360/device.mk)
-
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
@@ -30,3 +27,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 BUILD_FINGERPRINT := realme/RMX3360/RE54ABL1:13/TP1A.220905.001/R.c87188-d1f_1b5:user/release-keys
+
+# Inherit from RMX3360 device
+$(call inherit-product, device/oplus/RMX3360/device.mk)
