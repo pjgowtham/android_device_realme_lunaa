@@ -119,6 +119,7 @@ my_product/lib64/libjnistblur_api.so:system_ext/lib64/libjnistblur_api.so
 my_product/lib64/libsingle_camera_bokeh_native.so:system_ext/lib64/libsingle_camera_bokeh_native.so
 my_product/product_overlay/framework/com.oplus.camera.unit.sdk.adapter.jar:system_ext/framework/com.oplus.camera.unit.sdk.adapter.jar
 my_product/product_overlay/framework/com.oplus.camera.unit.sdk.jar:system_ext/framework/com.oplus.camera.unit.sdk.jar
+odm/bin/hw/vendor.oplus.hardware.cammidasservice@1.0-service
 odm/etc/camera/aicolor/duallut_background.bmp
 odm/etc/camera/aicolor/duallut_portrait.bmp
 odm/etc/camera/anc/fusion_model
@@ -589,6 +590,8 @@ odm/etc/camera/mtStereoParams.bin
 odm/etc/camera/mwStereoParams.bin
 odm/etc/camera/settings_fdc.txt
 odm/etc/camera/wide.bin
+odm/etc/init/vendor.oplus.hardware.cammidasservice@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplus_cammidasservice.xml
 odm/lib/libAlgoInterface.so
 odm/lib/libDeVIS.so
 odm/lib/libVDBlurlessAPI_v2.so
@@ -768,6 +771,7 @@ vendor/lib/camera.device@3.4-impl.so
 vendor/lib/camera.device@3.5-external-impl.so
 vendor/lib/camera.device@3.5-impl.so
 vendor/lib/camera.device@3.6-external-impl.so
+vendor/lib/libcamerapostproc.so
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib64/camera/components/com.arcsoft.node.eisv2.so
 vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so
