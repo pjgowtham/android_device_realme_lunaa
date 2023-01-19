@@ -760,6 +760,7 @@ system_ext/lib64/liboplusheifwriter.so
 system_ext/lib64/vendor.oplus.hardware.cameraMDM@1.0.so
 system_ext/lib64/vendor.oplus.hardware.commondcs@1.0.so
 vendor/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode
+vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
 vendor/lib64/camera/components/com.arcsoft.node.eisv2.so
 vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
