@@ -1001,6 +1001,11 @@ odm/etc/nfc/libnfc-st21h_conf.txt_21675:vendor/firmware/libnfc-st21h_conf.txt
 odm/etc/nfc/st21nfc_fw.bin_st21h:vendor/firmware/st21nfc_fw.bin
 odm/etc/nfc/st21nfc_fw7.bin_st21h:vendor/firmware/st21nfc_fw7.bin
 
+# Perf (OPLUS)
+odm/bin/hw/vendor.oplus.hardware.performance@1.0-service
+odm/etc/init/vendor.oplus.hardware.performance@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplus_performance.xml
+
 # Sensors
 odm/etc/sensor/config/alsps.json
 odm/etc/sensor/config/kodiak_ak991x_0.json
