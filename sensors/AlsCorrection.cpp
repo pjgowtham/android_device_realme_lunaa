@@ -40,10 +40,10 @@ static T get(const std::string& path, const T& def) {
 }
 
 void AlsCorrection::init() {
-    red_max_lux = 953;
-    green_max_lux = 1358;
-    blue_max_lux = 1140;
-    white_max_lux = 3120;
+    red_max_lux = 947;
+    green_max_lux = 1159;
+    blue_max_lux = 939;
+    white_max_lux = 2766;
     als_bias = 0;
     max_brightness = get("/sys/class/backlight/panel0-backlight/max_brightness", 255);
     ALOGV("max r = %d, max g = %d, max b = %d", red_max_lux, green_max_lux, blue_max_lux);
