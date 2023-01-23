@@ -40,6 +40,8 @@ using android::ScreenshotClient;
 using android::sp;
 using android::SurfaceComposerClient;
 
+constexpr int ALS_POS_X = 650;
+constexpr int ALS_POS_Y = 40;
 constexpr int ALS_RADIUS = 64;
 constexpr int SCREENSHOT_INTERVAL = 1;
 
