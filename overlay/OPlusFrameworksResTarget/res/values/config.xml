@@ -373,9 +373,6 @@
     <integer name="config_autoBrightnessBrighteningLightDebounce">1500</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">1500</integer>
 
-    <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
-    <integer name="config_autoBrightnessLightSensorRate">200</integer>
-
     <!-- See DisplayWhiteBalanceController.
          An array containing a list of display color temperatures, in Kelvin. See
          config_displayWhiteBalanceAmbientColorTemperatures for additional details.
