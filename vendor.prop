@@ -1,6 +1,9 @@
 # Bluetooth
 bluetooth.device.default_name=realme GT Master
 
+# Fingerprint
+persist.vendor.fp.template_updateflag=V1
+
 # Graphics
 ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
