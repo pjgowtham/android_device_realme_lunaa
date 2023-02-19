@@ -13,6 +13,9 @@ include device/oplus/sm8350-common/BoardConfigCommon.mk
 SOONG_CONFIG_qtidisplay_udfps := true
 TARGET_SCREEN_DENSITY := 450
 
+# Kernel
+TARGET_KERNEL_CONFIG += vendor/lineage_yupik.config
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
