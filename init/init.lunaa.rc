@@ -15,6 +15,10 @@
 on boot
     # Apply sensors fix
     start init-sensors_fix-sh
+    
+    # Force update tp firmware in /odm
+    # Required for downgrading tp fw
+    write /proc/touchpanel/tp_fw_update 1
 
 service init-sensors_fix-sh /vendor/bin/init.sensors_fix.sh
     class main
