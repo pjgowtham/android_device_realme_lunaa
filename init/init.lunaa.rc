@@ -16,6 +16,11 @@ on boot
     # Apply sensors fix
     start init-sensors_fix-sh
 
+on boot && property:persist.vendor.tp_fw.force_update=
+    # Force update touchpanel firmware once
+    write /proc/touchpanel/tp_fw_update 1
+    setprop persist.vendor.tp_fw.force_update done
+
 service init-sensors_fix-sh /vendor/bin/init.sensors_fix.sh
     class main
     user system
