@@ -118,7 +118,6 @@
         <param key="spkr_2_tz_name" value="wsatz.14"/>
         <param key="true_32_bit" value="true"/>
         <param key="hifi_filter" value="false"/>
-        <param key="native_audio_mode" value="false"/>
         <param key="hfp_pcm_dev_id" value="39"/>
         <param key="input_mic_max_count" value="4"/>
         <!--#Jianfeng.Qiu@PSW.MM.AudioDriver.HAL, 2019/08/22, Add for oplus config-->
