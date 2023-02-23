@@ -15,6 +15,9 @@ TARGET_SCREEN_DENSITY := 450
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Kernel
+TARGET_KERNEL_CONFIG += vendor/oplus_yupik_QGKI.config
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
