@@ -12,6 +12,9 @@ DEVICE_PATH := device/realme/lunaa
 # Display
 TARGET_SCREEN_DENSITY := 450
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 

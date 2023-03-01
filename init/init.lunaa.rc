@@ -26,3 +26,21 @@ service init-sensors_fix-sh /vendor/bin/init.sensors_fix.sh
     user system
     group system
     oneshot
+
+service vendor.pixelworks.hardware.display /odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
+    override
+    disabled
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+
+service vendor.pixelworks.hardware.feature /odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
+    override
+    disabled
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
