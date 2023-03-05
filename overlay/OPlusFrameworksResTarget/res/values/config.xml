@@ -96,6 +96,7 @@
         <item>63</item>
         <item>86</item>
         <item>150</item>
+        <item>160</item>
         <item>220</item>
         <item>270</item>
         <item>360</item>
@@ -105,33 +106,11 @@
         <item>1000</item>
         <item>2000</item>
         <item>3100</item>
-        <item>3988</item>
-        <item>5018</item>
-        <item>6232</item>
-        <item>7648</item>
-        <item>9280</item>
-        <item>11146</item>
-        <item>13261</item>
-        <item>15640</item>
-        <item>18302</item>
-        <item>21260</item>
-        <item>24532</item>
-        <item>28133</item>
-        <item>32080</item>
-        <item>36388</item>
-        <item>41073</item>
-        <item>46153</item>
-        <item>51642</item>
-        <item>63912</item>
-        <item>78015</item>
-        <item>94076</item>
-        <item>112226</item>
-        <item>132592</item>
-        <item>155302</item>
-        <item>180486</item>
-        <item>208271</item>
-        <item>223180</item>
-        <item>255108</item>
+        <item>5000</item>
+        <item>8000</item>
+        <item>12000</item>
+        <item>16000</item>
+        <item>20000</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -151,49 +130,28 @@
         <item>2.0487</item>
         <item>4.8394</item>
         <item>15.2619</item>
-        <item>33</item>
-        <item>49</item>
-        <item>62.95</item>
-        <item>76.46</item>
+        <item>30.2619</item>
+        <item>46.671</item>
+        <item>65.95</item>
+        <item>80.46</item>
         <item>84.38</item>
         <item>89.51</item>
         <item>100.34</item>
+        <item>102.21</item>
         <item>109.48</item>
-        <item>115</item>
-        <item>117.67</item>
-        <item>122.72</item>
-        <item>131.17</item>
-        <item>141.19</item>
-        <item>167.05</item>
+        <item>114.19</item>
+        <item>123.86</item>
+        <item>129.18</item>
+        <item>138.07</item>
+        <item>145.62</item>
+        <item>168.84</item>
         <item>234.9</item>
-        <item>279</item>
-        <item>300</item>
+        <item>280</item>
         <item>320</item>
-        <item>340</item>
         <item>360</item>
-        <item>380</item>
-        <item>400</item>
-        <item>420</item>
-        <item>440</item>
-        <item>460</item>
-        <item>480</item>
+        <item>405</item>
+        <item>450</item>
         <item>500</item>
-        <item>520</item>
-        <item>540</item>
-        <item>560</item>
-        <item>580</item>
-        <item>600</item>
-        <item>620</item>
-        <item>660</item>
-        <item>700</item>
-        <item>740</item>
-        <item>780</item>
-        <item>820</item>
-        <item>860</item>
-        <item>900</item>
-        <item>940</item>
-        <item>960</item>
-        <item>1000</item>
     </array>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
