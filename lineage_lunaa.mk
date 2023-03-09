@@ -8,24 +8,24 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from lemonade device
-$(call inherit-product, device/oneplus/lemonade/device.mk)
+# Inherit from lunaa device
+$(call inherit-product, device/realme/lunaa/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lemonade
-PRODUCT_DEVICE := lemonade
+PRODUCT_NAME := lineage_lunaa
+PRODUCT_DEVICE := lunaa
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := LE2115
+PRODUCT_MODEL := RMX3360
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="OnePlus9-user 13 TP1A.220905.001 R.159cc58-4e9e-182b9f release-keys" \
-    BuildFingerprint=OnePlus/OnePlus9/OnePlus9:13/TP1A.220905.001/R.159cc58-4e9e-182b9f:user/release-keys \
-    DeviceName=OnePlus9 \
-    DeviceProduct=OnePlus9 \
-    SystemDevice=OnePlus9 \
-    SystemName=OnePlus9
+    BuildDesc="RMX3360-user 14 TP1A.220905.001 R.18a3a4d-41d9-71a9 release-keys" \
+    BuildFingerprint=realme/RMX3360/RE54ABL1:13/TP1A.220905.001/R.18a3a4d-41d9-71a9:user/release-keys \
+    DeviceName=RE54ABL1 \
+    DeviceProduct=RMX3360 \
+    SystemDevice=RE54ABL1 \
+    SystemName=RMX3360
