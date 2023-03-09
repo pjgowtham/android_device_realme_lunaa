@@ -6,6 +6,6 @@
 <resources>
 
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
-    <string name="def_device_name_simple" translatable="false">OnePlus 9</string>
+    <string name="def_device_name_simple" translatable="false">realme GT Master</string>
 
 </resources>
