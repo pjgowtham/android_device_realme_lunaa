@@ -838,13 +838,6 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
-# ESE
-odm/bin/hw/vendor.qti.esepowermanager@1.1-service
-odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-odm/lib64/vendor.qti.esepowermanager@1.0.so
-odm/lib64/vendor.qti.esepowermanager@1.1.so
-
 # Fingerprint
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 odm/bin/init.oplus.fingerprints.sh
@@ -884,77 +877,6 @@ vendor/firmware/ipa_fws.b03
 vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
-
-# Iris
-odm/etc/inparm/iris5/inParm1.txt
-odm/etc/inparm/iris5/inParm10.txt
-odm/etc/inparm/iris5/inParm11.txt
-odm/etc/inparm/iris5/inParm12.txt
-odm/etc/inparm/iris5/inParm13.txt
-odm/etc/inparm/iris5/inParm14.txt
-odm/etc/inparm/iris5/inParm15.txt
-odm/etc/inparm/iris5/inParm16.txt
-odm/etc/inparm/iris5/inParm17.txt
-odm/etc/inparm/iris5/inParm18.txt
-odm/etc/inparm/iris5/inParm2.txt
-odm/etc/inparm/iris5/inParm3.txt
-odm/etc/inparm/iris5/inParm4.txt
-odm/etc/inparm/iris5/inParm5.txt
-odm/etc/inparm/iris5/inParm6.txt
-odm/etc/inparm/iris5/inParm7.txt
-odm/etc/inparm/iris5/inParm8.txt
-odm/etc/inparm/iris5/inParm9.txt
-odm/etc/inparm/irissoft/inParm.lst
-odm/etc/inparm/irissoft/inParm10.txt
-odm/etc/inparm/irissoft/inParm11.txt
-odm/etc/inparm/irissoft/inParm12.txt
-odm/etc/inparm/irissoft/inParm14_a.txt
-odm/etc/inparm/irissoft/inParm14_b.txt
-odm/etc/inparm/irissoft/inParm14_c.txt
-odm/etc/inparm/irissoft/inParm16_center.txt
-odm/etc/inparm/irissoft/inParm16_down.txt
-odm/etc/inparm/irissoft/inParm16_up.txt
-odm/etc/inparm/irissoft/inParm17_center.txt
-odm/etc/inparm/irissoft/inParm17_down.txt
-odm/etc/inparm/irissoft/inParm17_up.txt
-odm/etc/inparm/irissoft/inParm18_center.txt
-odm/etc/inparm/irissoft/inParm18_down.txt
-odm/etc/inparm/irissoft/inParm18_up.txt
-odm/etc/inparm/irissoft/inParm1_center.txt
-odm/etc/inparm/irissoft/inParm1_down.txt
-odm/etc/inparm/irissoft/inParm1_up.txt
-odm/etc/inparm/irissoft/inParm2_center.txt
-odm/etc/inparm/irissoft/inParm2_down.txt
-odm/etc/inparm/irissoft/inParm2_up.txt
-odm/etc/inparm/irissoft/inParm3_center.txt
-odm/etc/inparm/irissoft/inParm3_down.txt
-odm/etc/inparm/irissoft/inParm3_up.txt
-odm/etc/inparm/irissoft/inParm4_center.txt
-odm/etc/inparm/irissoft/inParm4_down.txt
-odm/etc/inparm/irissoft/inParm4_up.txt
-odm/etc/inparm/irissoft/inParm5_center.txt
-odm/etc/inparm/irissoft/inParm5_down.txt
-odm/etc/inparm/irissoft/inParm5_up.txt
-odm/etc/inparm/irissoft/inParm6_center.txt
-odm/etc/inparm/irissoft/inParm6_down.txt
-odm/etc/inparm/irissoft/inParm6_up.txt
-odm/etc/inparm/irissoft/inParm8_a.txt
-odm/etc/inparm/irissoft/inParm8_b.txt
-odm/etc/inparm/irissoft/inParm8_c.txt
-odm/etc/inparm/irissoft/mcfCheck.txt
-odm/etc/inparm/irissoft/mcfCheck_low.txt
-odm/etc/irissoft.fw
-odm/etc/irissoft_fod.fw
-
-# NFC
-odm/etc/nfc/libnfc-mtp-SN100.conf_19825:vendor/etc/libnfc-nxp.conf
-odm/etc/nfc/libnfc-nci.conf_19825:vendor/etc/libnfc-nci.conf
-odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57:vendor/firmware/sn100u.bin
-
-# Secure element
-odm/bin/hw/vendor.qti.secure_element@1.2-service
-odm/etc/init/vendor.qti.secure_element@1.2-service.rc
-odm/lib64/android.hardware.secure_element@1.0-impl.so
 
 # Sensors
 odm/etc/sensor/config/lahaina_aw9610x_0.json
