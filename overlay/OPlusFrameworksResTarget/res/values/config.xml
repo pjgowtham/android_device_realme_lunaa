@@ -376,6 +376,9 @@
     <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
     <integer name="config_autoBrightnessLightSensorRate">200</integer>
 
+    <!-- Boolean indicating whether display white balance is supported. -->
+    <bool name="config_displayWhiteBalanceAvailable">false</bool>
+
     <!-- See DisplayWhiteBalanceController.
          An array containing a list of display color temperatures, in Kelvin. See
          config_displayWhiteBalanceAmbientColorTemperatures for additional details.
