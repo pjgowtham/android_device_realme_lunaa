@@ -40,11 +40,11 @@ static T get(const std::string& path, const T& def) {
 }
 
 void AlsCorrection::init() {
-    red_max_lux = get("/mnt/vendor/persist/engineermode/red_max_lux", 0);
-    green_max_lux = get("/mnt/vendor/persist/engineermode/green_max_lux", 0);
-    blue_max_lux = get("/mnt/vendor/persist/engineermode/blue_max_lux", 0);
-    white_max_lux = get("/mnt/vendor/persist/engineermode/white_max_lux", 0);
-    als_bias = get("/mnt/vendor/persist/engineermode/als_bias", 0);
+    red_max_lux = get("/proc/sensor/als_cali/red_max_lux", 0);
+    green_max_lux = get("/proc/sensor/als_cali/green_max_lux", 0);
+    blue_max_lux = get("/proc/sensor/als_cali/blue_max_lux", 0);
+    white_max_lux = get("/proc/sensor/als_cali/white_max_lux", 0);
+    als_bias = 0;
     max_brightness = get("/sys/class/backlight/panel0-backlight/max_brightness", 255);
     ALOGV("max r = %d, max g = %d, max b = %d", red_max_lux, green_max_lux, blue_max_lux);
 }
