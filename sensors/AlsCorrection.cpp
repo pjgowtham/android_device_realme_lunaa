@@ -32,7 +32,7 @@
 #include <sys/un.h>
 #include <utils/Timers.h>
 
-#define PERSIST_ENG "/mnt/vendor/persist/engineermode/"
+#define PROC_ALS_CALI "/proc/sensor/als_cali/"
 #define SYSFS_BACKLIGHT "/sys/class/backlight/panel0-backlight/"
 
 namespace android {
@@ -42,10 +42,10 @@ namespace V2_1 {
 namespace implementation {
 
 static const std::string rgbw_max_lux_paths[4] = {
-    PERSIST_ENG "red_max_lux",
-    PERSIST_ENG "green_max_lux",
-    PERSIST_ENG "blue_max_lux",
-    PERSIST_ENG "white_max_lux",
+    PROC_ALS_CALI "red_max_lux",
+    PROC_ALS_CALI "green_max_lux",
+    PROC_ALS_CALI "blue_max_lux",
+    PROC_ALS_CALI "white_max_lux",
 };
 
 struct als_config {
@@ -62,65 +62,19 @@ struct als_config {
     float max_brightness;
 };
 
-#if defined(DEVICE_guacamole) || defined(DEVICE_guacamoleg)
-static als_config conf = {
-    .hbr = false,
-    .rgbw_max_lux = { 199.0, 216.0, 79.0, 428.0 },
-    .rgbw_max_lux_div = { 198.0, 216.0, 78.0, 409.0 },
-    .rgbw_poly = {
-        { 1.7404983E-6, 0.0018088078, 0.003599656, -0.5450117 },
-        { 4.12301E-6, 0.0017906721, -0.034968063, -0.08428217 },
-        { 1.361745E-6, 8.127534E-4, -0.046870504, 0.52842677 },
-        { 2.7275946E-6, 0.0016300974, -0.021769103, -0.16610238 },
-    },
-    .grayscale_weights = { 0.4, 0.43, 0.17 },
-    .sensor_inverse_gain = { 1.003141, 0.497163, 0.28517, 0.178429 },
-};
-#elif defined(DEVICE_guacamoleb)
-static als_config conf = {
-    .hbr = false,
-    .rgbw_max_lux = { 670.0, 680.0, 347.0, 1294.0 },
-    .rgbw_max_lux_div = { 485.0, 647.0, 275.0, 1225.0 },
-    .rgbw_poly = {
-        { 4.6876557E-6, 0.0039652763, 0.58725166, 0.0 },
-        { 3.999002E-6, 0.0076181223, 0.35004568, 0.0 },
-        { 1.8699997E-6, 0.0030195534, 0.19580707, 0.0 },
-        { 3.83552E-6, 0.0054658977, 0.40376243, 0.0 },
-    },
-    .grayscale_weights = { 0.35, 0.46, 0.19 },
-    .sensor_inverse_gain = { 0.472747, 0.206944, 0.117592, 0.067704 },
-};
-#elif defined(DEVICE_hotdog) || defined(DEVICE_hotdogg)
 static als_config conf = {
     .hbr = true,
-    .rgbw_max_lux = { 419.0, 822.0, 251.0, 1255.0 },
-    .rgbw_max_lux_div = { 414.0, 817.0, 251.0, 1245.0 },
+    .rgbw_max_lux = { 947.0, 1159.0, 939.0, 2766.0 },
+    .rgbw_max_lux_div = { 900.0, 1100.0, 900.0, 2750.0 },
     .rgbw_poly = {
-        { 1.1255767E-5, 0.0023767108, 0.2771623, 0.0 },
-        { 2.8453156E-5, 0.004190259, 0.25827286, 0.0 },
-        { 6.5442537E-6, 0.0020840308, 0.020182181, 0.0 },
-        { 1.9053505E-5, 0.003323373, 0.22403096, 0.0 },
+        { 2.704E-5, 6.81E-3, 0.22414, 0.0 },
+        { 8E-6, 0.01655, -0.20433, 0.0 },
+        { -2.553E-6, 0.01673, 0.41113, 0.0 },
+        { 6.3798E-5, 0.0261, -1.64283, 0.0 },
     },
-    .grayscale_weights = { 0.33, 0.5, 0.17 },
-    .sensor_inverse_gain = { 0.232, 0.175, 0.133, 0.097 },
+    .grayscale_weights = { 0.316, 0.385, 0.299 },
+    .sensor_inverse_gain = { 0.11, 0.032, 0.140, 0.035 },
 };
-#elif defined(DEVICE_hotdogb)
-static als_config conf = {
-    .hbr = true,
-    .rgbw_max_lux = { 1500.0, 2600.0, 1400.0, 4600.0 },
-    .rgbw_max_lux_div = { 1437.0, 2427.0, 1369.0, 4606.0 },
-    .rgbw_poly = {
-        { 4.787111E-5, 0.0073087, 0.6651031, 0.0 },
-        { 1.1037093E-4, 0.0059161806, 0.82983816, 0.0 },
-        { 4.6553232E-5, 0.008220689, 0.24763061, 0.0 },
-        { 7.379156E-5, 0.006951839, 0.6299237, 0.0 },
-    },
-    .grayscale_weights = { 0.33, 0.42, 0.25 },
-    .sensor_inverse_gain = { 0.0615, 0.0466, 0.0361, 0.0288 },
-};
-#else
-#error No ALS configuration for this device
-#endif
 
 static struct {
     float middle;
