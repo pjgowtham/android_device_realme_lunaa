@@ -1,7 +1,7 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from OnePlus 9 (LE2115_11.F.21).
 
-# ACDBs
+# ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
 odm/etc/acdbdata/Bluetooth_cal.acdb
 odm/etc/acdbdata/General_cal.acdb
@@ -69,10 +69,10 @@ vendor/lib/libgui1_vendor.so
 vendor/lib/libssrec.so
 vendor/lib/vendor.oplus.hardware.extcamera@1.0.so
 
-# Audio Firmware
+# Audio firmware
 odm/firmware/tfa98xx.cnt
 
-# Audio LVIMFS Params
+# Audio LVIMFS params
 odm/etc/lvimfs_params/LVACFS_Configuration.txt
 odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt
