@@ -122,7 +122,7 @@ void AlsCorrection::init() {
     initialized = true;
 
     // TODO: Constantly update and persist this
-    float screen_on_time = get(PERSIST_ENG "screenontimebyhours", 0.0);
+    float screen_on_time = get(PROC_ALS_CALI "screenontimebyhours", 0.0);
     float screen_aging_factor = 1.0 - screen_on_time / 87600.0;
     ALOGI("Screen on time: %.2fh (aging factor: %.2f%%)",
         screen_on_time, screen_aging_factor * 100.0);
@@ -146,17 +146,17 @@ void AlsCorrection::init() {
         conf.rgbw_max_lux[0], conf.rgbw_max_lux[1],
         conf.rgbw_max_lux[2], conf.rgbw_max_lux[3]);
 
-    float row_coe = get(PERSIST_ENG "row_coe", 0.0);
+    float row_coe = get(PROC_ALS_CALI "row_coe", 0.0);
     if (row_coe != 0.0) {
         conf.sensor_inverse_gain[0] = row_coe / 1000.0;
     }
     conf.agc_threshold = 800.0 / conf.sensor_inverse_gain[0];
 
-    float cali_coe = get(PERSIST_ENG "cali_coe", 0.0);
+    float cali_coe = get(PROC_ALS_CALI "cali_coe", 0.0);
     conf.calib_gain = cali_coe > 0.0 ? cali_coe / 1000.0 : 1.0;
     ALOGI("Calibrated sensor gain: %.2fx", 1.0 / (conf.calib_gain * conf.sensor_inverse_gain[0]));
 
-    float als_bias = get(PERSIST_ENG "als_bias", 0.0);
+    float als_bias = get(PROC_ALS_CALI "als_bias", 0.0);
     conf.bias = als_bias <= 4.0 ? als_bias : 0.0;
     ALOGI("Sensor bias: %.2f", conf.bias);
 

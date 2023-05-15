@@ -31,6 +31,7 @@
 
 using android::base::SetProperty;
 using android::gui::ScreenCaptureResults;
+using android::ui::Rotation;
 using android::ui::DisplayState;
 using android::ui::PixelFormat;
 using android::AsyncScreenCaptureListener;
@@ -41,18 +42,22 @@ using android::Rect;
 using android::ScreenshotClient;
 using android::sp;
 using android::SurfaceComposerClient;
+using namespace android;
 
 constexpr int ALS_POS_X = 650;
 constexpr int ALS_POS_Y = 40;
-constexpr int ALS_RADIUS = 64;
-constexpr int SCREENSHOT_INTERVAL = 1;
+constexpr int ALS_RADIUS = 40;
 
-static Rect screenshot_rect(499, 110, 525, 136);
+static Rect screenshot_rect_0(ALS_POS_X - ALS_RADIUS, ALS_POS_Y - ALS_RADIUS, ALS_POS_X + ALS_RADIUS, ALS_POS_Y + ALS_RADIUS);
+static Rect screenshot_rect_land_90(ALS_POS_Y - ALS_RADIUS, 1080 - ALS_POS_X - ALS_RADIUS, ALS_POS_Y + ALS_RADIUS, 1080 - ALS_POS_X + ALS_RADIUS);
+static Rect screenshot_rect_180(1080-ALS_POS_X - ALS_RADIUS, 2400-ALS_POS_Y - ALS_RADIUS, 1080-ALS_POS_X + ALS_RADIUS, 2400-ALS_POS_Y + ALS_RADIUS);
+static Rect screenshot_rect_land_270(2400 - (ALS_POS_Y + ALS_RADIUS),ALS_POS_X - ALS_RADIUS, 2400 - (ALS_POS_Y - ALS_RADIUS), ALS_POS_X + ALS_RADIUS);
 
 class TakeScreenshotCommand : public FrameworkCommand {
   public:
     TakeScreenshotCommand() : FrameworkCommand("take_screenshot") {}
     ~TakeScreenshotCommand() override = default;
+
     int runCommand(SocketClient* cli, int /*argc*/, char **/*argv*/) {
         auto screenshot = takeScreenshot();
         cli->sendData(&screenshot, sizeof(screenshot_t));
@@ -65,16 +70,42 @@ class TakeScreenshotCommand : public FrameworkCommand {
     };
 
     screenshot_t takeScreenshot() {
-        static sp<GraphicBuffer> outBuffer = new GraphicBuffer(
-                screenshot_rect.getWidth(), screenshot_rect.getHeight(),
-                android::PIXEL_FORMAT_RGB_888,
-                GraphicBuffer::USAGE_SW_READ_OFTEN | GraphicBuffer::USAGE_SW_WRITE_OFTEN);
+        sp<IBinder> display = SurfaceComposerClient::getInternalDisplayToken();
 
-        ScreenshotClient::capture(
-                SurfaceComposerClient::getInternalDisplayToken(),
-                android::ui::Dataspace::V0_SRGB, android::ui::PixelFormat::RGBA_8888,
-                screenshot_rect, screenshot_rect.getWidth(), screenshot_rect.getHeight(),
-                false, android::ui::ROTATION_0, &outBuffer);
+        android::ui::DisplayState state;
+        SurfaceComposerClient::getDisplayState(display, &state);
+        Rect screenshot_rect;
+        switch (state.orientation) {
+             case Rotation::Rotation90:  screenshot_rect = screenshot_rect_land_90;
+                                         break;
+             case Rotation::Rotation180: screenshot_rect = screenshot_rect_180;
+                                         break;
+             case Rotation::Rotation270: screenshot_rect = screenshot_rect_land_270;
+                                         break;
+             default:                    screenshot_rect = screenshot_rect_0;
+                                         break;
+        }
+
+        sp<SyncScreenCaptureListener> captureListener = new SyncScreenCaptureListener();
+        gui::ScreenCaptureResults captureResults;
+
+        static sp<GraphicBuffer> outBuffer = new GraphicBuffer(
+        screenshot_rect.getWidth(), screenshot_rect.getHeight(),
+        android::PIXEL_FORMAT_RGB_888,
+        GraphicBuffer::USAGE_SW_READ_OFTEN | GraphicBuffer::USAGE_SW_WRITE_OFTEN);
+
+        DisplayCaptureArgs captureArgs;
+        captureArgs.displayToken = display;
+        captureArgs.pixelFormat = android::ui::PixelFormat::RGBA_8888;
+        captureArgs.sourceCrop = screenshot_rect;
+        captureArgs.width = screenshot_rect.getWidth();
+        captureArgs.height = screenshot_rect.getHeight();
+        captureArgs.useIdentityTransform = false;
+        status_t ret = ScreenshotClient::captureDisplay(captureArgs, captureListener);
+        if (ret == NO_ERROR) {
+            captureResults = captureListener->waitForResults();
+            if (captureResults.result == NO_ERROR)  outBuffer = captureResults.buffer;
+        }
 
         uint8_t *out;
         auto resultWidth = outBuffer->getWidth();
