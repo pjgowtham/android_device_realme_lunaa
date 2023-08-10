@@ -23,6 +23,7 @@ odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
 odm/lib/rfsa/adsp/libaiboost_skel.so
 odm/lib/rfsa/adsp/libaiboost_skel_v65.so
 odm/lib/rfsa/adsp/libaiboost_skel_v66.so
+odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so
 odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_5111_skel.so
 odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
 odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
