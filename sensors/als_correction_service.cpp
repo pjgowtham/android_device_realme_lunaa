@@ -45,6 +45,14 @@ constexpr int ALS_POS_Y = 40;
 constexpr int ALS_RADIUS = 64;
 constexpr int SCREENSHOT_INTERVAL = 1;
 
+// See frameworks/base/services/core/jni/com_android_server_display_DisplayControl.cpp and
+// frameworks/base/core/java/android/view/SurfaceControl.java
+static sp<IBinder> getInternalDisplayToken() {
+    const auto displayIds = SurfaceComposerClient::getPhysicalDisplayIds();
+    sp<IBinder> token = SurfaceComposerClient::getPhysicalDisplayToken(displayIds[0]);
+    return token;
+}
+
 void updateScreenBuffer() {
     static time_t lastScreenUpdate = 0;
     static sp<GraphicBuffer> outBuffer = new GraphicBuffer(
@@ -59,10 +67,10 @@ void updateScreenBuffer() {
         return;
     }
 
-    sp<IBinder> display = SurfaceComposerClient::getInternalDisplayToken();
+    sp<IBinder> display = getInternalDisplayToken();
 
     DisplayCaptureArgs captureArgs;
-    captureArgs.displayToken = SurfaceComposerClient::getInternalDisplayToken();
+    captureArgs.displayToken = getInternalDisplayToken();
     captureArgs.pixelFormat = PixelFormat::RGBA_8888;
     captureArgs.sourceCrop = Rect(
             ALS_POS_X - ALS_RADIUS, ALS_POS_Y - ALS_RADIUS,
