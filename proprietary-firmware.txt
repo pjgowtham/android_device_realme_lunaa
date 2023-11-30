@@ -1,0 +1,26 @@
+## All proprietary files from this list, unless pinned and noted otherwise,
+## are from OnePlus 9 (LE2115_13.1.0.592(EX01)).
+
+abl.img;AB
+aop.img;AB
+bluetooth.img;AB
+cpucp.img;AB
+devcfg.img;AB
+dsp.img;AB
+engineering_cdt.img;AB
+featenabler.img;AB
+hyp.img;AB
+imagefv.img;AB
+keymaster.img;AB
+modem.img;AB
+multiimgoem.img;AB
+oplus_sec.img;AB
+oplusstanvbk.img;AB
+qupfw.img;AB
+qweslicstore.img;AB
+shrm.img;AB
+splash.img;AB
+tz.img;AB
+uefisecapp.img;AB
+xbl.img;AB
+xbl_config.img;AB
