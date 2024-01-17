@@ -616,6 +616,8 @@ odm/lib64/libPerfectlyClearCrux.so
 odm/lib64/libPerfectlyClearCruxOpt.so
 odm/lib64/libPolarrRender.so
 odm/lib64/libPreviewDecisionOld.so
+odm/lib64/libQnnHtpAltPrepStub.so
+odm/lib64/libQnnHtpStub.so
 odm/lib64/libRedeyeReduce.so
 odm/lib64/libSNPE.so
 odm/lib64/libSNPE_G.so
