@@ -27,6 +27,6 @@
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">@dimen/status_bar_padding_start</dimen>
 
-    <dimen name="keyguard_indication_margin_bottom">300px</dimen>
+    <dimen name="keyguard_indication_margin_bottom">350px</dimen>
 
 </resources>
