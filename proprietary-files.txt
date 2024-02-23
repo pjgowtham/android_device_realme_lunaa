@@ -98,6 +98,12 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
 # Bluetooth Firmware
 odm/etc/bt/msnv11.bin
 
+# Camera - from OnePlus 11 5G (CPH2449_14.0.0.401(EX01))
+odm/lib64/libarcsoft_dualcam_bokeh_api.so|956a646a768776c99e526705ed334a57bea408db
+odm/lib64/libarcsoft_dualcam_refocus_left.so|7ff371e45b7c20e354690a36ae3ee7357a1572f0
+odm/lib64/libarcsoft_dualcam_refocus_preview.so|ca8db3898bfca38592708f9c57cf60d97ebda117
+odm/lib64/libarcsoft_dualcam_refocus_uw.so|afd6c8dd14878d317342949476807e6c17e0cd2e
+
 # Camera
 odm/etc/camera/aicolor/duallut_background.bmp
 odm/etc/camera/aicolor/duallut_portrait.bmp
@@ -652,10 +658,6 @@ odm/lib64/libapsjpeg.so
 odm/lib64/libarcsoft_aicolor_image.so
 odm/lib64/libarcsoft_aicolor_video.so
 odm/lib64/libarcsoft_distortion_correction.so
-odm/lib64/libarcsoft_dualcam_bokeh_api.so
-odm/lib64/libarcsoft_dualcam_refocus_left.so
-odm/lib64/libarcsoft_dualcam_refocus_preview.so
-odm/lib64/libarcsoft_dualcam_refocus_uw.so
 odm/lib64/libarcsoft_frc.so
 odm/lib64/libarcsoft_hdr_couple_api.so
 odm/lib64/libarcsoft_hdr_couple_api_V2.so
