@@ -1,3 +1,6 @@
+# ALS
+vendor.sensors.als_correction.grabrect=675 0 740 60
+
 # Bluetooth
 bluetooth.device.default_name=realme GT Master
 
