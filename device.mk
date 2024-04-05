@@ -8,11 +8,6 @@
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Alert slider
-PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key-calibrate
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_platform_info.xml \
@@ -56,15 +51,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    KeyHandlerResTarget \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget
-
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare-service.oplus
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
