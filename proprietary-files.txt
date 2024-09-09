@@ -540,6 +540,7 @@ odm/etc/init/calibrationOutput_uw_686.rc
 odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
 odm/lib/libDeVIS.so
 odm/lib/libdehaze.so
+odm/lib/libfastov_dsp.so
 odm/lib/libnightvision.so
 odm/lib64/camera/components/com.arcsoft.node.eisv2.so
 odm/lib64/camera/components/com.arcsoft.node.smooth_transition.so
@@ -573,6 +574,7 @@ odm/lib64/libAlgoInterface.so
 odm/lib64/libAlgoProcess.so
 odm/lib64/libAncSegmentSdk.so
 odm/lib64/libCOppLceTonemapAPI.so
+odm/lib64/libDeVIS.so
 odm/lib64/libEIS.so
 odm/lib64/libFaceBeautyCap.so
 odm/lib64/libFaceBeautyPICap.so
@@ -640,6 +642,7 @@ odm/lib64/libarcsoft_tricam_verification.so
 odm/lib64/libarcsoft_triple_sat.so
 odm/lib64/libarcsoft_triple_zoomtranslator.so
 odm/lib64/libarcsoft_videoautozoom.so
+odm/lib64/libdehaze.so
 odm/lib64/libdualcam_image_optical_zoom.so
 odm/lib64/libdualcam_optical_zoom_control.so
 odm/lib64/libdualcam_video_optical_zoom.so
