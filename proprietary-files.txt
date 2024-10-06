@@ -11,8 +11,8 @@ odm/etc/acdbdata/Headset_cal.acdb
 odm/etc/acdbdata/Speaker_cal.acdb
 
 # ADSP modules
-odm/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepSkel.so
-odm/lib/rfsa/adsp/aiboost/libQnnHtpSkel.so
+odm/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepSkel.so;MODULE_SUFFIX=.aiboost
+odm/lib/rfsa/adsp/aiboost/libQnnHtpSkel.so;MODULE_SUFFIX=.aiboost
 odm/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so
 odm/lib/rfsa/adsp/libQnnHtp.so
 odm/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
@@ -57,11 +57,11 @@ odm/lib/rfsa/adsp/libworker_pool.so
 odm/lib/libaudioEngineerTest.so
 odm/lib/liblvimfs.so
 odm/lib/liblvimfs_wrapper.so
-vendor/lib/hw/audio.primary.lahaina.so
-vendor/lib/liba2dpoffload.so
+vendor/lib/hw/audio.primary.lahaina.so;MODULE_SUFFIX=-odm
+vendor/lib/liba2dpoffload.so;MODULE_SUFFIX=-odm
 vendor/lib/libextcamera_client.so
 vendor/lib/libgui1_vendor.so
-vendor/lib/libssrec.so
+vendor/lib/libssrec.so;MODULE_SUFFIX=-odm
 vendor/lib/vendor.oplus.hardware.extcamera@1.0.so
 
 # Audio firmware
@@ -98,15 +98,9 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
 # Bluetooth Firmware
 odm/etc/bt/msnv11.bin
 
-# Camera - from OnePlus 11 5G (CPH2449_14.0.0.401(EX01))
-odm/lib64/libarcsoft_dualcam_bokeh_api.so|956a646a768776c99e526705ed334a57bea408db
-odm/lib64/libarcsoft_dualcam_refocus_left.so|7ff371e45b7c20e354690a36ae3ee7357a1572f0
-odm/lib64/libarcsoft_dualcam_refocus_preview.so|ca8db3898bfca38592708f9c57cf60d97ebda117
-odm/lib64/libarcsoft_dualcam_refocus_uw.so|afd6c8dd14878d317342949476807e6c17e0cd2e
-
 # Camera
-odm/etc/camera/aicolor/duallut_background.bmp
-odm/etc/camera/aicolor/duallut_portrait.bmp
+odm/etc/camera/aicolor/duallut_background.bmp;MODULE_SUFFIX=.aiboost
+odm/etc/camera/aicolor/duallut_portrait.bmp;MODULE_SUFFIX=.aiboost
 odm/etc/camera/anc/fusion_model
 odm/etc/camera/anc/fusion_model_post
 odm/etc/camera/anc/merged_model
@@ -489,9 +483,9 @@ odm/etc/camera/pf/PerfectColorSet/portrait/param9.ini
 odm/etc/camera/pf/PerfectColorSet/portrait/photoSet.ini
 odm/etc/camera/pf/PerfectColorSet/portrait/platformSet.ini
 odm/etc/camera/pf/PerfectColorSet/portrait/sceneList.txt
-odm/etc/camera/pfb_bin/BeardSharp.bin
-odm/etc/camera/pfb_bin/BeardSharp.frag
-odm/etc/camera/pfb_bin/BeardSharp.vert
+odm/etc/camera/pfb_bin/BeardSharp.bin;MODULE_SUFFIX=.bin
+odm/etc/camera/pfb_bin/BeardSharp.frag;MODULE_SUFFIX=.frag
+odm/etc/camera/pfb_bin/BeardSharp.vert;MODULE_SUFFIX=.vert
 odm/etc/camera/pfb_bin/PreAddSRBinary.bin
 odm/etc/camera/pfb_bin/PreCalVarBinary.bin
 odm/etc/camera/pfb_bin/PreCalcSRBinary.bin
@@ -510,18 +504,18 @@ odm/etc/camera/pfb_bin/PreSkintuneMRTBinary.bin
 odm/etc/camera/pfb_bin/PreSurfaceBlurBinary.bin
 odm/etc/camera/pfb_bin/PreVertFilterBinary.bin
 odm/etc/camera/pfb_bin/PreVertSurBinary.bin
-odm/etc/camera/pfb_bin/SkinCalcHue.bin
-odm/etc/camera/pfb_bin/SkinCalcHue.frag
-odm/etc/camera/pfb_bin/SkinCalcHue.vert
-odm/etc/camera/pfb_bin/SkinColorBlur.bin
-odm/etc/camera/pfb_bin/SkinColorBlur.frag
-odm/etc/camera/pfb_bin/SkinColorBlur.vert
-odm/etc/camera/pfb_bin/SkinColorUnify.bin
-odm/etc/camera/pfb_bin/SkinColorUnify.frag
-odm/etc/camera/pfb_bin/SkinColorUnify.vert
-odm/etc/camera/pfb_bin/SkinHueUnify.bin
-odm/etc/camera/pfb_bin/SkinHueUnify.frag
-odm/etc/camera/pfb_bin/SkinHueUnify.vert
+odm/etc/camera/pfb_bin/SkinCalcHue.bin;MODULE_SUFFIX=.bin
+odm/etc/camera/pfb_bin/SkinCalcHue.frag;MODULE_SUFFIX=.frag
+odm/etc/camera/pfb_bin/SkinCalcHue.vert;MODULE_SUFFIX=.vert
+odm/etc/camera/pfb_bin/SkinColorBlur.bin;MODULE_SUFFIX=.bin
+odm/etc/camera/pfb_bin/SkinColorBlur.frag;MODULE_SUFFIX=.frag
+odm/etc/camera/pfb_bin/SkinColorBlur.vert;MODULE_SUFFIX=.vert
+odm/etc/camera/pfb_bin/SkinColorUnify.bin;MODULE_SUFFIX=.bin
+odm/etc/camera/pfb_bin/SkinColorUnify.frag;MODULE_SUFFIX=.frag
+odm/etc/camera/pfb_bin/SkinColorUnify.vert;MODULE_SUFFIX=.vert
+odm/etc/camera/pfb_bin/SkinHueUnify.bin;MODULE_SUFFIX=.bin
+odm/etc/camera/pfb_bin/SkinHueUnify.frag;MODULE_SUFFIX=.frag
+odm/etc/camera/pfb_bin/SkinHueUnify.vert;MODULE_SUFFIX=.vert
 odm/etc/camera/pfb_bin/ThirdPartyPreHoriFilterBinary.bin
 odm/etc/camera/pfb_bin/ThirdPartyPreMorphBinary.bin
 odm/etc/camera/pfb_bin/ThirdPartyPreOnlywhitenBinary.bin
@@ -573,7 +567,7 @@ odm/etc/camera/mwStereoParams.bin
 odm/etc/camera/settings_fdc.txt
 odm/etc/camera/wide.bin
 odm/lib/libDeVIS.so
-odm/lib/libVDBlurlessAPI_v2.so
+odm/lib/libVDBlurlessAPI_v2.so;DISABLE_CHECKELF
 odm/lib/libc++_shared.so
 odm/lib64/camera/components/com.oplus.node.preview.so
 odm/lib64/camera/components/com.oplus.node.rtb.so
@@ -614,9 +608,9 @@ odm/lib64/libFaceBeautyPre.so
 odm/lib64/libFaceDistortionCorrection.so
 odm/lib64/libFaceWhiten.so
 odm/lib64/libFilterWrapper.so
-odm/lib64/libImageWarpMask.so
-odm/lib64/libOGLManager.so
-odm/lib64/libOPLUS_SCPortrait.so
+odm/lib64/libImageWarpMask.so;FIX_SONAME
+odm/lib64/libOGLManager.so;DISABLE_CHECKELF
+odm/lib64/libOPLUS_SCPortrait.so;FIX_SONAME
 odm/lib64/libPerfectColor.so
 odm/lib64/libPerfectlyClearCrux.so
 odm/lib64/libPerfectlyClearCruxOpt.so
@@ -629,14 +623,13 @@ odm/lib64/libSNPE.so
 odm/lib64/libSNPE_G.so
 odm/lib64/libStarMode.so
 odm/lib64/libSuperRaw.so
-odm/lib64/libSuperTextWrapper.so
 odm/lib64/libTrafficMode.so
 odm/lib64/libVDBayerHDR.so
-odm/lib64/libVDBlurless.so
+odm/lib64/libVDBlurless.so;FIX_SONAME
 odm/lib64/libVDDualCameraBlurlessAPI.so
 odm/lib64/libVDExternal.so
 odm/lib64/libVDPostureDetection.so
-odm/lib64/libVDSuperPhotoAPI.so
+odm/lib64/libVDSuperPhotoAPI.so;FIX_SONAME
 odm/lib64/libVDUpScale.so
 odm/lib64/libVideoEnhance.so
 odm/lib64/libWaterMark.so
@@ -647,10 +640,10 @@ odm/lib64/libaisd.so
 odm/lib64/libaiseg.so
 odm/lib64/libalCFR.so
 odm/lib64/libancbase_rt_bokeh.so
-odm/lib64/libancbase_rt_fusion.so
-odm/lib64/libancbase_rt_retain.so
+odm/lib64/libancbase_rt_fusion.so;FIX_SONAME
+odm/lib64/libancbase_rt_retain.so;FIX_SONAME
 odm/lib64/libancbase_segbase.so
-odm/lib64/libancbase_segment.so
+odm/lib64/libancbase_segment.so;FIX_SONAME
 odm/lib64/libaps_frame_registration.so
 odm/lib64/libapsdarksight.so
 odm/lib64/libapsexif.so
@@ -667,13 +660,13 @@ odm/lib64/libarcsoft_hdrplus_hvx_stub.so
 odm/lib64/libarcsoft_high_dynamic_range.so
 odm/lib64/libarcsoft_high_dynamic_range_couple.so
 odm/lib64/libarcsoft_high_dynamic_range_couple_V2.so
-odm/lib64/libarcsoft_high_dynamic_range_v4.so
+odm/lib64/libarcsoft_high_dynamic_range_v4.so;DISABLE_CHECKELF
 odm/lib64/libarcsoft_lensstaindetection.so
 odm/lib64/libarcsoft_low_light_hdr.so
-odm/lib64/libarcsoft_low_light_hdr_for_neon.so
+odm/lib64/libarcsoft_low_light_hdr_for_neon.so;FIX_SONAME
 odm/lib64/libarcsoft_pic_best.so
 odm/lib64/libarcsoft_portraitSN_hvx_stub.so
-odm/lib64/libarcsoft_portrait_super_night_raw.so
+odm/lib64/libarcsoft_portrait_super_night_raw.so;DISABLE_CHECKELF
 odm/lib64/libarcsoft_preview_antibanding.so
 odm/lib64/libarcsoft_qnnhtp.so
 odm/lib64/libarcsoft_scbokeh_image.so
@@ -812,11 +805,11 @@ vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/libQ6MSFR_manager_stub.so
 vendor/lib64/libSonyIMX471RmscLibrary.so
 vendor/lib64/libaidenoiser.so
-vendor/lib64/libarcsoft_dual_sat.so
+vendor/lib64/libarcsoft_dual_sat.so;DISABLE_CHECKELF
 vendor/lib64/libarcsoft_dual_zoomtranslator.so
 vendor/lib64/libarcsoft_eis_wrapper.so
-vendor/lib64/libarcsoft_triple_sat.so
-vendor/lib64/libarcsoft_triple_zoomtranslator.so
+vendor/lib64/libarcsoft_triple_sat.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_triple_zoomtranslator.so;DISABLE_CHECKELF
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcamera_nn_stub.so
@@ -835,7 +828,6 @@ vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcvface_api.so
-vendor/lib64/libhwconfigurationutil.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libjpege.so
@@ -865,11 +857,9 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
-vendor/lib64/libtriplecam_optical_zoom_control.so
-vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|436cd1f351daaee8d8068c790005e814c6e4cdb6|74cb9bfeeb96df0b707654d662042133ffb23c1a
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -916,6 +906,13 @@ vendor/firmware/yupik_ipa_fws.b03
 vendor/firmware/yupik_ipa_fws.b04
 vendor/firmware/yupik_ipa_fws.elf
 vendor/firmware/yupik_ipa_fws.mdt
+
+# Media
+odm/lib/libaiboost_qnn_sr.so
+odm/lib/libaiboost_sr.so
+odm/lib/libaiboost_ubwc.so
+odm/lib/libosie_process.so
+odm/lib/libosie_stub.so
 
 # NFC
 odm/etc/init/init.st54x.nfc.rc
