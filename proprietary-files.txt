@@ -64,10 +64,10 @@ odm/lib/libaudioEngineerTest.so
 odm/lib/liblvimfs.so
 odm/lib/liblvimfs_wrapper.so
 vendor/lib/hw/audio.primary.lahaina.so
-vendor/lib/liba2dpoffload.so
+vendor/lib/liba2dpoffload.so:odm/lib/liba2dpoffload.so
+vendor/lib/libssrec.so:odm/lib/libssrec.so
 vendor/lib/libextcamera_client.so
 vendor/lib/libgui1_vendor.so
-vendor/lib/libssrec.so
 vendor/lib/vendor.oplus.hardware.extcamera@1.0.so
 
 # Audio firmware
