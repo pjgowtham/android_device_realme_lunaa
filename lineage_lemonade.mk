@@ -20,14 +20,12 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := LE2115
 
-PRODUCT_SYSTEM_NAME := OnePlus9
-PRODUCT_SYSTEM_DEVICE := OnePlus9
-
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="OnePlus9-user 13 TP1A.220905.001 R.159cc58-4e9e-182b9f release-keys" \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
-BUILD_FINGERPRINT := OnePlus/OnePlus9/OnePlus9:13/TP1A.220905.001/R.159cc58-4e9e-182b9f:user/release-keys
+    BuildDesc="OnePlus9-user 13 TP1A.220905.001 R.159cc58-4e9e-182b9f release-keys" \
+    BuildFingerprint=OnePlus/OnePlus9/OnePlus9:13/TP1A.220905.001/R.159cc58-4e9e-182b9f:user/release-keys \
+    DeviceName=OnePlus9 \
+    DeviceProduct=OnePlus9 \
+    SystemDevice=OnePlus9 \
+    SystemName=OnePlus9
