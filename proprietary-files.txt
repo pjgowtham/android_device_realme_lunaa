@@ -539,7 +539,6 @@ odm/etc/init/calibrationOutput_uw.rc
 odm/etc/init/calibrationOutput_uw_686.rc
 odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
 odm/lib/libDeVIS.so
-odm/lib/libc++_shared.so
 odm/lib/libdehaze.so
 odm/lib/libnightvision.so
 odm/lib64/camera/components/com.arcsoft.node.eisv2.so
@@ -641,7 +640,6 @@ odm/lib64/libarcsoft_tricam_verification.so
 odm/lib64/libarcsoft_triple_sat.so
 odm/lib64/libarcsoft_triple_zoomtranslator.so
 odm/lib64/libarcsoft_videoautozoom.so
-odm/lib64/libc++_shared.so
 odm/lib64/libdualcam_image_optical_zoom.so
 odm/lib64/libdualcam_optical_zoom_control.so
 odm/lib64/libdualcam_video_optical_zoom.so
