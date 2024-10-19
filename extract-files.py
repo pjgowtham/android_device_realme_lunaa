@@ -8,20 +8,33 @@ from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
 )
+from extract_utils.fixups_lib import (
+    lib_fixup_vendorcompat,
+    lib_fixups_user_type,
+    libs_proto_3_9_1,
+)
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
 
 namespace_imports = [
+    'hardware/oplus',
     'vendor/oneplus/sm8350-common',
+    'vendor/qcom/opensource/display',
 ]
+
+lib_fixups: lib_fixups_user_type = {
+    libs_proto_3_9_1: lib_fixup_vendorcompat,
+}
 
 blob_fixups: blob_fixups_user_type = {
     'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
         .regex_replace('SystemCamera =  0;  0;  1;  1;  1', 'SystemCamera =  0;  0;  0;  0;  1'),
     ('odm/lib/liblvimfs_wrapper.so', 'odm/lib64/libCOppLceTonemapAPI.so', 'odm/lib64/libaps_frame_registration.so', 'vendor/lib64/libalsc.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'odm/lib64/libAlgoProcess.so': blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V1-ndk_platform.so', 'android.hardware.graphics.common-V5-ndk.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()
@@ -41,6 +54,8 @@ module = ExtractUtilsModule(
     'oneplus',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    check_elf=True,
     add_firmware_proprietary_file=True,
 )
 

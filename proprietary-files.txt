@@ -12,11 +12,11 @@ odm/etc/acdbdata/Headset_cal.acdb
 odm/etc/acdbdata/Speaker_cal.acdb
 
 # ADSP modules
-odm/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepSkel.so
-odm/lib/rfsa/adsp/aiboost/libQnnHtpSkel.so
+odm/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepSkel.so;MODULE_SUFFIX=_odm_aiboost
+odm/lib/rfsa/adsp/aiboost/libQnnHtpSkel.so;MODULE_SUFFIX=_odm_aiboost
 odm/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so
 odm/lib/rfsa/adsp/libQnnHtp.so
-odm/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
+odm/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so;MODULE_SUFFIX=_odm
 odm/lib/rfsa/adsp/libQnnHtpSkel.so
 odm/lib/rfsa/adsp/libSuperRawPost_skel.so
 odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
@@ -35,7 +35,7 @@ odm/lib/rfsa/adsp/libc++abi.so.1
 odm/lib/rfsa/adsp/libcalculator_domains_skel.so
 odm/lib/rfsa/adsp/libcalculator_skel.so
 odm/lib/rfsa/adsp/libdehaze_skel.so
-odm/lib/rfsa/adsp/libhdr_skel.so
+odm/lib/rfsa/adsp/libhdr_skel.so;MODULE_SUFFIX=_odm
 odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so
 odm/lib/rfsa/adsp/libinterstellar_skel.so
 odm/lib/rfsa/adsp/libktvdrc.so
@@ -57,15 +57,15 @@ odm/lib/rfsa/adsp/libsnpe_htp_v68_skel.so
 odm/lib/rfsa/adsp/libvdblurless_4.6.10L_skel.so
 odm/lib/rfsa/adsp/libvdblurless_skel.so
 odm/lib/rfsa/adsp/libvdsuperphoto_skel.so
-odm/lib/rfsa/adsp/libworker_pool.so
+odm/lib/rfsa/adsp/libworker_pool.so;MODULE_SUFFIX=_odm--
 
 # Audio
 odm/lib/libaudioEngineerTest.so
 odm/lib/liblvimfs.so
 odm/lib/liblvimfs_wrapper.so
 vendor/lib/hw/audio.primary.lahaina.so
-vendor/lib/liba2dpoffload.so:odm/lib/liba2dpoffload.so
-vendor/lib/libssrec.so:odm/lib/libssrec.so
+vendor/lib/liba2dpoffload.so:odm/lib/liba2dpoffload.so;MODULE_SUFFIX=_odm
+vendor/lib/libssrec.so:odm/lib/libssrec.so;MODULE_SUFFIX=_odm
 vendor/lib/libextcamera_client.so
 vendor/lib/libgui1_vendor.so
 vendor/lib/vendor.oplus.hardware.extcamera@1.0.so
@@ -539,7 +539,7 @@ odm/etc/init/calibrationOutput_uw.rc
 odm/etc/init/calibrationOutput_uw_686.rc
 odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
 odm/lib/libDeVIS.so
-odm/lib/libdehaze.so
+odm/lib/libdehaze.so;DISABLE_CHECKELF
 odm/lib/libfastov_dsp.so
 odm/lib/libnightvision.so;FIX_SONAME
 odm/lib64/camera/components/com.arcsoft.node.eisv2.so
@@ -581,7 +581,7 @@ odm/lib64/libFaceBeautyPICap.so
 odm/lib64/libFaceBeautyPre.so
 odm/lib64/libFaceDistortionCorrection.so
 odm/lib64/libImageWarpMask.so;FIX_SONAME
-odm/lib64/libOGLManager.so
+odm/lib64/libOGLManager.so;DISABLE_CHECKELF
 odm/lib64/libOPLUS_SCPortrait.so;FIX_SONAME
 odm/lib64/libPerfectlyClearCrux.so
 odm/lib64/libPerfectlyClearCruxOpt.so
@@ -621,22 +621,22 @@ odm/lib64/libarcsoft_hdr_couple_api.so
 odm/lib64/libarcsoft_hdr_couple_api_v4.so
 odm/lib64/libarcsoft_hdr_denoise_api.so
 odm/lib64/libarcsoft_hdr_denoise_api_v4.so
-odm/lib64/libarcsoft_hdrplus_hvx_stub.so
+odm/lib64/libarcsoft_hdrplus_hvx_stub.so;DISABLE_CHECKELF
 odm/lib64/libarcsoft_high_dynamic_range.so
 odm/lib64/libarcsoft_high_dynamic_range_couple.so
 odm/lib64/libarcsoft_high_dynamic_range_couple_v4.so
-odm/lib64/libarcsoft_high_dynamic_range_v4.so
+odm/lib64/libarcsoft_high_dynamic_range_v4.so;DISABLE_CHECKELF
 odm/lib64/libarcsoft_lensstaindetection.so
 odm/lib64/libarcsoft_low_light_hdr.so
 odm/lib64/libarcsoft_pic_best.so
 odm/lib64/libarcsoft_portraitSN_hvx_stub.so
-odm/lib64/libarcsoft_portrait_super_night_raw.so
+odm/lib64/libarcsoft_portrait_super_night_raw.so;DISABLE_CHECKELF
 odm/lib64/libarcsoft_preview_antibanding.so
 odm/lib64/libarcsoft_qnnhtp.so
 odm/lib64/libarcsoft_scbokeh_video.so
 odm/lib64/libarcsoft_smart_denoise.so
 odm/lib64/libarcsoft_smart_denoise_v4.so
-odm/lib64/libarcsoft_super_night_raw.so
+odm/lib64/libarcsoft_super_night_raw.so;DISABLE_CHECKELF
 odm/lib64/libarcsoft_tricam_calibration.so
 odm/lib64/libarcsoft_tricam_verification.so
 odm/lib64/libarcsoft_triple_sat.so
@@ -648,7 +648,7 @@ odm/lib64/libdualcam_optical_zoom_control.so
 odm/lib64/libdualcam_video_optical_zoom.so
 odm/lib64/libfastov_dsp.so
 odm/lib64/libhta.so
-odm/lib64/libhwconfigurationutil.so
+odm/lib64/libhwconfigurationutil.so;MODULE_SUFFIX=_odm
 odm/lib64/libhyperlapse.so
 odm/lib64/libml_util.so
 odm/lib64/libmpbase.so
