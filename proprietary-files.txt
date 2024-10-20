@@ -808,7 +808,7 @@ vendor/lib64/libthreadutils.so
 vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|436cd1f351daaee8d8068c790005e814c6e4cdb6|74cb9bfeeb96df0b707654d662042133ffb23c1a
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|38ff048bb7f0a372e0d6ae88144bef2c01b8d10f|b08ed1ebb4298f9c9629ead4c8e088d7d543bc18
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
