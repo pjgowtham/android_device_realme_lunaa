@@ -36,7 +36,9 @@ blob_fixups: blob_fixups_user_type = {
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V1-ndk_platform.so', 'android.hardware.graphics.common-V5-ndk.so'),
     'vendor/etc/libnfc-hal-st.conf':  blob_fixup()
-        .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
+        .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0')
+        .regex_replace('STNFC_FW_PATH_STORAGE="/data/vendor/nfc/"', 'STNFC_FW_PATH_STORAGE="/vendor/firmware/"')
+        .regex_replace('STNFC_FW_CONF_NAME="/data/vendor/nfc/libnfc-st21h_conf.txt"', 'STNFC_FW_CONF_NAME="libnfc-st21h_conf.txt"'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()
