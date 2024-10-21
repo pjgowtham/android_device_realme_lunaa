@@ -94,7 +94,9 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/etc/libnfc-hal-st.conf':  blob_fixup()
-        .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
+        .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0')
+        .regex_replace('STNFC_FW_PATH_STORAGE="/data/vendor/nfc/"', 'STNFC_FW_PATH_STORAGE="/vendor/firmware/"')
+        .regex_replace('STNFC_FW_CONF_NAME="/data/vendor/nfc/libnfc-st21h_conf.txt"', 'STNFC_FW_CONF_NAME="libnfc-st21h_conf.txt"'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
 }  # fmt: skip
