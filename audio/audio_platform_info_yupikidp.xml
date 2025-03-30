@@ -79,7 +79,7 @@
         <usecase name="USECASE_AUDIO_PLAYBACK_FM" type="out" id="30"/>
         <usecase name="USECASE_AUDIO_PLAYBACK_FM" type="in" id="32"/>
         <usecase name="USECASE_AUDIO_SPKR_CALIB_RX" type="out" id="30"/>
-        <usecase name="USECASE_AUDIO_SPKR_CALIB_TX" type="in" id="32"/>
+        <usecase name="USECASE_AUDIO_SPKR_CALIB_TX" type="in" id="47"/>
         <usecase name="USECASE_AUDIO_PLAYBACK_AFE_PROXY" type="out" id="5"/>
         <usecase name="USECASE_AUDIO_RECORD_AFE_PROXY" type="in" id="6"/>
         <usecase name="USECASE_AUDIO_RECORD_AFE_PROXY2" type="in" id="42"/>
