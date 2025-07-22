@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
 # Lineage Health
-$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/chg_enable)
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/mmi_charging_enable)
 
 # NFC
 PRODUCT_PACKAGES += \
