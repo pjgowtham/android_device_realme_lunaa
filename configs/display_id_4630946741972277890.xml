@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<displayConfiguration>
+    <screenBrightnessMap interpolation="linear">
+        <point>
+            <value>0.0014367816</value>
+            <nits>0.1023</nits>
+        </point>
+        <point>
+            <value>0.73527</value>
+            <nits>215.05115</nits>
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>430.0</nits>
+        </point>
+    </screenBrightnessMap>
+    <highBrightnessMode enabled="true">
+        <transitionPoint>0.73527</transitionPoint>
+        <minimumHdrPercentOfScreen>0.1</minimumHdrPercentOfScreen>
+        <minimumLux>8700</minimumLux>
+        <timing>
+            <timeWindowSecs>1800</timeWindowSecs>
+            <timeMaxSecs>300</timeMaxSecs>
+            <timeMinSecs>60</timeMinSecs>
+        </timing>
+        <sdrHdrRatioMap>
+            <point>
+                <sdrNits>2.000</sdrNits>
+                <hdrRatio>8.000</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>500.000</sdrNits>
+                <hdrRatio>1.5</hdrRatio>
+            </point>
+        </sdrHdrRatioMap>
+    </highBrightnessMode>
+    <screenBrightnessRampFastDecrease>0.06</screenBrightnessRampFastDecrease>
+    <screenBrightnessRampFastIncrease>0.06</screenBrightnessRampFastIncrease>
+    <screenBrightnessRampSlowDecrease>0.04</screenBrightnessRampSlowDecrease>
+    <screenBrightnessRampSlowIncrease>0.04</screenBrightnessRampSlowIncrease>
+    <screenBrightnessRampIncreaseMaxMillis>3000</screenBrightnessRampIncreaseMaxMillis>
+    <screenBrightnessRampDecreaseMaxMillis>3000</screenBrightnessRampDecreaseMaxMillis>
+</displayConfiguration>
