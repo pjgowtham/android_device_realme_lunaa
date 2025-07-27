@@ -875,13 +875,6 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
-# ESE
-odm/bin/hw/vendor.qti.esepowermanager@1.1-service
-odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-odm/lib64/vendor.qti.esepowermanager@1.0.so
-odm/lib64/vendor.qti.esepowermanager@1.1.so
-
 # Fingerprint
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 odm/bin/init.oplus.fingerprints.sh
@@ -982,16 +975,6 @@ odm/etc/inparm/irissoft/mcfCheck.txt
 odm/etc/inparm/irissoft/mcfCheck_low.txt
 odm/etc/irissoft.fw
 odm/etc/irissoft_fod.fw
-
-# NFC
-odm/etc/nfc/libnfc-mtp-SN100.conf_19825:vendor/etc/libnfc-nxp.conf
-odm/etc/nfc/libnfc-nci.conf_19825:vendor/etc/libnfc-nci.conf
-odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57:vendor/firmware/sn100u.bin
-
-# Secure element
-odm/bin/hw/vendor.qti.secure_element@1.2-service
-odm/etc/init/vendor.qti.secure_element@1.2-service.rc
-odm/lib64/android.hardware.secure_element@1.0-impl.so
 
 # Sensors
 odm/etc/sensor/config/lahaina_aw9610x_0.json
