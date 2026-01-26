@@ -873,7 +873,6 @@ odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
 odm/lib64/anc.hal.so
 odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
 odm/vendor/firmware/ancap64.b00
 odm/vendor/firmware/ancap64.b01
