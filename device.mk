@@ -23,6 +23,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Biometrics (Face)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml
+
 # Camera
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
@@ -77,6 +81,10 @@ $(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8350-common/common.mk)
+
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    device/realme/lunaa/vintf/compatibility_matrix.xml
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/realme/lunaa/lunaa-vendor.mk)

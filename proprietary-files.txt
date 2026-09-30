@@ -862,6 +862,23 @@ vendor/firmware/CAMERA_ICP_170.elf
 vendor/etc/ltm_config_samsung_AMS643YE01_dsc_cmd_mode_panel.xml
 vendor/etc/qdcm_calib_data_samsung_AMS643YE01_dsc_cmd_mode_panel.xml
 
+# Face unlock
+odm/bin/hw/vendor.oplus.hardware.biometrics.face@1.0-service
+odm/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplus_face.xml
+odm/lib64/libstfaceunlockocl.so
+odm/init.oplus.face.rc
+vendor/lib64/libcamera2ndk_vendor.so
+odm/vendor/firmware/facereg.b00
+odm/vendor/firmware/facereg.b01
+odm/vendor/firmware/facereg.b02
+odm/vendor/firmware/facereg.b03
+odm/vendor/firmware/facereg.b04
+odm/vendor/firmware/facereg.b05
+odm/vendor/firmware/facereg.b06
+odm/vendor/firmware/facereg.b07
+odm/vendor/firmware/facereg.mdt
+
 # Fingerprint
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 odm/bin/init.oplus.fingerprints.sh
